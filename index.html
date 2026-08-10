@@ -291,7 +291,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   <div class="kpi-row">
     <div class="kpi"><div class="kpi-num c-blue">8,000<span style="font-size:15px;font-weight:500">+</span></div><div class="kpi-label">语音多样性用例</div></div>
     <div class="kpi"><div class="kpi-num c-green">48</div><div class="kpi-label">工具调用可用用例</div></div>
-    <div class="kpi"><div class="kpi-num c-orange">500</div><div class="kpi-label">领域知识审核中</div></div>
+    <div class="kpi"><div class="kpi-num c-orange">500</div><div class="kpi-label">Memory 评测审核中</div></div>
     <div class="kpi"><div class="kpi-num c-purple">14</div><div class="kpi-label">多轮交互候选</div></div>
     <div class="kpi"><div class="kpi-num" style="color:var(--muted)">2</div><div class="kpi-label">维度待构建 (B/C)</div></div>
   </div>
@@ -325,7 +325,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-sub">A-1 并行调度准确率<br>A-2 串行顺序正确率<br>A-3 工具错误恢复率<br>A-4 工具调用正确性</div>
       <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 1,500+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--green)"></div></div>
-      <div class="dim-sources">来源：Car Bench (48) + 业务 TTS (8000+) + VehichemBench (500 审核中)</div>
+      <div class="dim-sources">来源：Car Bench (48) + 业务 TTS (8000+)</div>
     </div>
     <!-- B -->
     <div class="dim-card planned">
@@ -350,9 +350,9 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tg">已构建</span></div>
       <div class="dim-header"><span class="dim-code">D</span><span class="dim-title">记忆管理</span></div>
       <div class="dim-sub">D-1 写入成功率<br>D-2 归档维度准确率<br>D-3 记忆内容准确率<br>D-4 召回注入准确率</div>
-      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 1,500+</span></div>
+      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条可用 + 500 审核中 / 目标 1,500+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:3%;background:var(--green)"></div></div>
-      <div class="dim-sources">来源：Car Bench（含 memory 写入与消费）</div>
+      <div class="dim-sources">来源：Car Bench (48) + VehicleMemBench (500 审核中)</div>
     </div>
     <!-- L -->
     <div class="dim-card auto">
@@ -534,7 +534,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   </div>
 
   <div class="mb">
-    <div class="mh"><h3>管线 3 · VehichemBench → 领域知识推理</h3><span class="tag ty">审核中</span></div>
+    <div class="mh"><h3>管线 3 · VehicleMemBench → 记忆评测</h3><span class="tag ty">审核中</span></div>
     <div class="mb-body">
       <div class="pipe">
         <div class="pipe-node"><div class="num">500</div><div class="lbl">原始用例转换</div></div>
@@ -555,41 +555,42 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
     </div>
   </div>
 
-  <!-- VehichemBench 示例 -->
+  <!-- VehicleMemBench 示例 -->
   <div class="example-card" style="margin-top:0;">
     <h4><span class="tag to">示例</span> 模型初筛 → 人工复审</h4>
     <div class="g2">
       <div>
         <div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:6px;">✓ 审核通过</div>
         <div class="code-blk">{
-  "case_id": "vchem_012",
-  "instruction": "前挡风玻璃起雾了，帮我除雾",
-  "status": ["挡风玻璃有雾气"],
+  "case_id": "vmem_012",
+  "instruction": "我有点冷，上次设的空调温度
+              你还记得吗？",
+  "memory_ref": "preferred_ac_temp",
   "gt_actions": [
     { "name": "set_aircon",
-      "kwargs": { "mode": "defrost",
-                  "fan_speed": "high" } }
+      "kwargs": { "temp": 24 } }
   ]
 }</div>
-        <div style="font-size:11px;color:var(--muted);margin-top:4px;">量纲一致、答案无争议</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">memory 召回正确、答案无争议</div>
       </div>
       <div>
         <div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:6px;">✗ 待人工复审</div>
         <div class="code-blk">{
-  "case_id": "vchem_087",
-  "instruction": "座椅表面温度太高了，
-               帮我降温到不烫的程度",
-  "status": ["座椅表面温度52°C"],
+  "case_id": "vmem_087",
+  "instruction": "帮我导航回之前去过的那
+               个地方",
+  "memory_expected": ["last_destination"],
   "gt_actions": [
-    { "name": "set_seat_ventilation",
-      "kwargs": { "level": "???" } }
-    // "不烫的程度"是几档？多少度？
+    { "name": "navigate",
+      "kwargs": { "dest": "???" } }
+    // "那个地方"是哪个？
+    // memory 中存了多个历史目的地
   ]
 }</div>
-        <div style="font-size:11px;color:var(--muted);margin-top:4px;">量纲歧义，需人工定义阈值</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">memory 有歧义（多个历史目的地），需人工明确 groundtruth</div>
       </div>
     </div>
-    <div class="cal cal-y" style="margin-top:12px;"><strong>审核流程：</strong>① 模型逐条检查量纲一致性、参数合理性；② 标记争议条目（模糊量词、缺失单位、多解问题）；③ 人工复审，修正或剔除后归入最终评测集。</div>
+    <div class="cal cal-y" style="margin-top:12px;"><strong>审核流程：</strong>① 模型逐条检查 memory 召回正确性和 groundtruth 确定性；② 标记争议条目（多 memory 候选、模糊指代）；③ 人工复审，修正或剔除后归入最终评测集。</div>
   </div>
 </section>
 
@@ -598,13 +599,13 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   <h2><span class="sn">映射</span> 维度 × 数据源对照</h2>
   <div class="tw">
     <table>
-      <thead><tr><th>评测维度</th><th>子指标</th><th>业务 TTS<br>8000+</th><th>Car Bench<br>48+14</th><th>VehichemBench<br>500</th><th>当前合计</th><th>目标</th><th>状态</th></tr></thead>
+      <thead><tr><th>评测维度</th><th>子指标</th><th>业务 TTS<br>8000+</th><th>Car Bench<br>48+14</th><th>VehicleMemBench<br>500</th><th>当前合计</th><th>目标</th><th>状态</th></tr></thead>
       <tbody>
         <tr><td><strong>R · 工具检索</strong></td><td style="color:var(--muted)">Recall@K · MRR · P95</td><td style="text-align:center;color:var(--green)">✓ 8000+</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>8,500+</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag tg">已构建</span></td></tr>
         <tr><td><strong>A · 执行质量</strong></td><td style="color:var(--muted)">并行 · 串行 · 恢复 · 正确性</td><td style="text-align:center;color:var(--green)">✓ 8000+</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center;color:var(--yellow)">审核中</td><td><strong>8,500+</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag tg">已构建</span></td></tr>
         <tr><td><strong>B · A/B 增量</strong></td><td style="color:var(--muted)">TSR Δ · pass^k · 跨域 · 时延 Δ</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td><strong>—</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag" style="background:rgba(105,117,122,.1);color:var(--muted)">待启动</span></td></tr>
         <tr><td><strong>C · 上下文管理</strong></td><td style="color:var(--muted)">注入准确率 · 依赖轮次 · 长轨迹</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--purple)">候选 14</td><td style="text-align:center">—</td><td><strong>14</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag ty">规划中</span></td></tr>
-        <tr><td><strong>D · 记忆管理</strong></td><td style="color:var(--muted)">写入 · 归档 · 内容 · 召回</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>48</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag tg">已构建</span></td></tr>
+        <tr><td><strong>D · 记忆管理</strong></td><td style="color:var(--muted)">写入 · 归档 · 内容 · 召回</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center;color:var(--yellow)">审核中 500</td><td><strong>548</strong></td><td style="color:var(--muted)">1,500+</td><td><span class="tag tg">已构建</span></td></tr>
         <tr><td><strong>L · 时延拆解</strong></td><td style="color:var(--muted)">Harness Overhead · PSG</td><td style="text-align:center;color:var(--blue)">自动</td><td style="text-align:center;color:var(--blue)">自动</td><td style="text-align:center;color:var(--blue)">自动</td><td><strong>随跑随测</strong></td><td style="color:var(--muted)">1,000+</td><td><span class="tag tb">自动采集</span></td></tr>
       </tbody>
     </table>
@@ -618,7 +619,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
     <table>
       <thead><tr><th>优先级</th><th>维度</th><th>任务</th><th>预期产出</th><th>依赖</th></tr></thead>
       <tbody>
-        <tr><td><span class="tag tr">P0</span></td><td>A</td><td>VehichemBench 人工复审完成</td><td>500 条领域知识评测用例定稿</td><td style="color:var(--muted)">人工带宽</td></tr>
+        <tr><td><span class="tag tr">P0</span></td><td>D</td><td>VehicleMemBench 人工复审完成</td><td>500 条memory 评测用例定稿</td><td style="color:var(--muted)">人工带宽</td></tr>
         <tr><td><span class="tag tr">P0</span></td><td>C</td><td>Car Bench 14 条复杂场景 → 多轮交互演化</td><td>1,000+ 条多轮上下文评测用例</td><td style="color:var(--muted)">场景设计</td></tr>
         <tr><td><span class="tag tr">P0</span></td><td>D</td><td>记忆评测集构建：从业务用例中抽取 Memory 写入/消费场景</td><td>1,000+ 条 Memory 评测用例（含写入+召回）</td><td style="color:var(--muted)">业务用例梳理</td></tr>
         <tr><td><span class="tag ty">P1</span></td><td>B</td><td>A/B 对比集构建 + Baseline 环境部署</td><td>1,000+ 条 ab_compare 用例</td><td style="color:var(--muted)">Baseline 就绪</td></tr>
