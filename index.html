@@ -314,7 +314,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tg">已构建</span></div>
       <div class="dim-header"><span class="dim-code">R</span><span class="dim-title">工具检索</span></div>
       <div class="dim-sub">R-1 Required Tool Recall@K<br>R-2 排序质量 (MRR / nDCG)<br>R-3 检索时延 P95</div>
-      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 5,000+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--green)"></div></div>
       <div class="dim-sources">全量用例均涉及工具调用，无需单独构造评测集</div>
     </div>
@@ -323,7 +323,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tg">已构建</span></div>
       <div class="dim-header"><span class="dim-code">A</span><span class="dim-title">执行质量</span></div>
       <div class="dim-sub">A-1 并行调度准确率<br>A-2 串行顺序正确率<br>A-3 工具错误恢复率<br>A-4 工具调用正确性</div>
-      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 5,000+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--green)"></div></div>
       <div class="dim-sources">来源：Car Bench (48) + 业务 TTS (8000+) + VehichemBench (500 审核中)</div>
     </div>
@@ -332,7 +332,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span style="font-size:11px;color:var(--muted)">待启动</span></div>
       <div class="dim-header"><span class="dim-code">B</span><span class="dim-title">A/B 增量价值</span></div>
       <div class="dim-sub">B-1 任务成功率 Δ<br>B-2 pass^k 稳定性 Δ<br>B-3 跨域成功率 Δ<br>B-4 端到端时延 Δ<br>B-5 pass@k Δ</div>
-      <div class="dim-stat"><span class="dim-count" style="color:var(--muted)">—</span><span class="dim-target">目标 500+</span></div>
+      <div class="dim-stat"><span class="dim-count" style="color:var(--muted)">—</span><span class="dim-target">目标 5,000+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:0%"></div></div>
       <div class="dim-sources">需部署 Baseline 对照组后启动</div>
     </div>
@@ -341,8 +341,8 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag ty">规划中</span></div>
       <div class="dim-header"><span class="dim-code">C</span><span class="dim-title">上下文管理</span></div>
       <div class="dim-sub">C-1 上下文注入准确率<br>C-2 依赖轮次成功率<br>C-3 长轨迹完成率</div>
-      <div class="dim-stat"><span class="dim-count c-yellow">14</span><span class="dim-target">条候选 / 目标 500+</span></div>
-      <div class="dim-bar"><div class="dim-bar-fill" style="width:3%;background:var(--yellow)"></div></div>
+      <div class="dim-stat"><span class="dim-count c-yellow">14</span><span class="dim-target">条候选 / 目标 5,000+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:0.3%;background:var(--yellow)"></div></div>
       <div class="dim-sources">来源：Car Bench 复杂场景 → 多轮交互演化</div>
     </div>
     <!-- D -->
@@ -350,8 +350,8 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tg">已构建</span></div>
       <div class="dim-header"><span class="dim-code">D</span><span class="dim-title">记忆管理</span></div>
       <div class="dim-sub">D-1 写入成功率<br>D-2 归档维度准确率<br>D-3 记忆内容准确率<br>D-4 召回注入准确率</div>
-      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 500+</span></div>
-      <div class="dim-bar"><div class="dim-bar-fill" style="width:10%;background:var(--green)"></div></div>
+      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 5,000+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:1%;background:var(--green)"></div></div>
       <div class="dim-sources">来源：Car Bench（含 memory 写入与消费）</div>
     </div>
     <!-- L -->
@@ -359,7 +359,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tb">自动采集</span></div>
       <div class="dim-header"><span class="dim-code">L</span><span class="dim-title">时延拆解</span></div>
       <div class="dim-sub">L-1 Harness 自身开销<br>L-2 并行调度收益 (PSG)</div>
-      <div class="dim-stat"><span class="dim-count" style="color:var(--blue)">随跑随测</span><span class="dim-target">目标 1,000+</span></div>
+      <div class="dim-stat"><span class="dim-count" style="color:var(--blue)">随跑随测</span><span class="dim-target">目标 3,000+</span></div>
       <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--blue)"></div></div>
       <div class="dim-sources">每次评测自动记录时延，不单独构造评测集。随 R/A/C/D 用例累积，样本自然覆盖上千次。</div>
     </div>
@@ -398,7 +398,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
         <div class="pipe-node"><div class="num" style="color:var(--green)">8,000<span style="font-size:12px">+</span></div><div class="lbl">语音评测集总规模</div></div>
       </div>
       <div class="cal cal-g">
-        <strong>设计思路：</strong>真实座舱输入是乘客语音，不同方言、年龄、语气不应影响工具调用正确性。8000+ 条语音用例本质是对同一批 groundtruth 的输入多样性增强——同一个意图用四川话、老年声线、急切口吻说出来，Harness 最终调用的工具和参数应该一致。评测落点在 <strong>A-4 工具调用正确性</strong>。
+        <strong>设计思路：</strong>真实座舱输入是乘客语音，不同方言、年龄、语气不应影响工具调用正确性。8000+ 条语音用例由 TTS 模型批量生成（非人工逐条构造），本质是对同一批 groundtruth 的输入多样性增强——同一个意图用四川话、老年声线、急切口吻说出来，Harness 最终调用的工具和参数应该一致。评测落点在 <strong>A-4 工具调用正确性</strong>。
       </div>
       <div class="breakdown">
         <div class="bd-item"><div class="bd-num c-blue">6,000<span style="font-size:11px">+</span></div><div class="bd-lbl">方言/年龄变体</div></div>
@@ -630,9 +630,9 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <thead><tr><th>优先级</th><th>维度</th><th>任务</th><th>预期产出</th><th>依赖</th></tr></thead>
       <tbody>
         <tr><td><span class="tag tr">P0</span></td><td>A</td><td>VehichemBench 人工复审完成</td><td>500 条领域知识评测用例定稿</td><td style="color:var(--muted)">人工带宽</td></tr>
-        <tr><td><span class="tag tr">P0</span></td><td>C</td><td>Car Bench 14 条复杂场景 → 多轮交互演化</td><td>500+ 条多轮上下文评测用例</td><td style="color:var(--muted)">场景设计</td></tr>
-        <tr><td><span class="tag tr">P0</span></td><td>D</td><td>记忆评测集构建：从业务用例中抽取 Memory 写入/消费场景</td><td>500+ 条 Memory 评测用例（含写入+召回）</td><td style="color:var(--muted)">业务用例梳理</td></tr>
-        <tr><td><span class="tag ty">P1</span></td><td>B</td><td>A/B 对比集构建 + Baseline 环境部署</td><td>500+ 条 ab_compare 用例</td><td style="color:var(--muted)">Baseline 就绪</td></tr>
+        <tr><td><span class="tag tr">P0</span></td><td>C</td><td>Car Bench 14 条复杂场景 → 多轮交互演化</td><td>5,000+ 条多轮上下文评测用例</td><td style="color:var(--muted)">场景设计</td></tr>
+        <tr><td><span class="tag tr">P0</span></td><td>D</td><td>记忆评测集构建：从业务用例中抽取 Memory 写入/消费场景</td><td>5,000+ 条 Memory 评测用例（含写入+召回）</td><td style="color:var(--muted)">业务用例梳理</td></tr>
+        <tr><td><span class="tag ty">P1</span></td><td>B</td><td>A/B 对比集构建 + Baseline 环境部署</td><td>5,000+ 条 ab_compare 用例</td><td style="color:var(--muted)">Baseline 就绪</td></tr>
       </tbody>
     </table>
   </div>
@@ -771,13 +771,13 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   <h2><span class="sn">附录</span> 评测集子集组织与目标数量</h2>
   <table>
     <tr><th>子集</th><th>目标数量</th><th>维度</th><th>关键字段</th></tr>
-    <tr><td><strong>工具检索集</strong></td><td>≥ 500条</td><td><span class="tag tb">R</span></td><td style="color:var(--muted)">mode=tool_retrieval, spec.required_tools, spec.hard_negatives</td></tr>
-    <tr><td><strong>并行调度集</strong></td><td>≥ 150条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=parallel, model_output_mock</td></tr>
-    <tr><td><strong>串行依赖集</strong></td><td>≥ 150条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=serial, depends_on</td></tr>
-    <tr><td><strong>故障注入集</strong></td><td>≥ 200条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">fault_injection, expected_recovery</td></tr>
-    <tr><td><strong>A/B 对比集</strong></td><td>≥ 500条</td><td><span class="tag tg">B</span></td><td style="color:var(--muted)">mode=ab_compare, spec.groundtruth/judge_spec</td></tr>
-    <tr><td><strong>多轮上下文集</strong></td><td>≥ 500条</td><td><span class="tag tp">C</span></td><td style="color:var(--muted)">spec.turns[], spec.required_context</td></tr>
-    <tr><td><strong>Memory 集</strong></td><td>≥ 500条</td><td><span class="tag tp">D</span></td><td style="color:var(--muted)">mode=memory_write / memory_recall, spec.expected_write</td></tr>
+    <tr><td><strong>工具检索集</strong></td><td>≥ 5,000条</td><td><span class="tag tb">R</span></td><td style="color:var(--muted)">mode=tool_retrieval, spec.required_tools, spec.hard_negatives</td></tr>
+    <tr><td><strong>并行调度集</strong></td><td>≥ 1,500条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=parallel, model_output_mock</td></tr>
+    <tr><td><strong>串行依赖集</strong></td><td>≥ 1,500条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=serial, depends_on</td></tr>
+    <tr><td><strong>故障注入集</strong></td><td>≥ 2,000条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">fault_injection, expected_recovery</td></tr>
+    <tr><td><strong>A/B 对比集</strong></td><td>≥ 5,000条</td><td><span class="tag tg">B</span></td><td style="color:var(--muted)">mode=ab_compare, spec.groundtruth/judge_spec</td></tr>
+    <tr><td><strong>多轮上下文集</strong></td><td>≥ 5,000条</td><td><span class="tag tp">C</span></td><td style="color:var(--muted)">spec.turns[], spec.required_context</td></tr>
+    <tr><td><strong>Memory 集</strong></td><td>≥ 5,000条</td><td><span class="tag tp">D</span></td><td style="color:var(--muted)">mode=memory_write / memory_recall, spec.expected_write</td></tr>
     <tr><td><strong>时延基准</strong></td><td>自动累积</td><td><span class="tag tb">L</span></td><td style="color:var(--muted)">每次评测自动记录，不单独构造</td></tr>
   </table>
 </section>
