@@ -314,9 +314,9 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="dim-status"><span class="tag tg">已构建</span></div>
       <div class="dim-header"><span class="dim-code">R</span><span class="dim-title">工具检索</span></div>
       <div class="dim-sub">R-1 Required Tool Recall@K<br>R-2 排序质量 (MRR / nDCG)<br>R-3 检索时延 P95</div>
-      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 500+</span></div>
-      <div class="dim-bar"><div class="dim-bar-fill" style="width:10%;background:var(--green)"></div></div>
-      <div class="dim-sources">来源：Car Bench 工具映射</div>
+      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--green)"></div></div>
+      <div class="dim-sources">全量用例均涉及工具调用，无需单独构造评测集</div>
     </div>
     <!-- A -->
     <div class="dim-card active">
@@ -373,7 +373,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
       <div class="cov-pct" style="color:var(--yellow)">67%</div>
     </div>
     <div style="display:flex;gap:18px;margin-top:10px;font-size:12px;color:var(--muted);flex-wrap:wrap">
-      <span style="color:var(--green)">●</span><span> 已构建：R · A · D（来自 Car Bench）</span>
+      <span style="color:var(--green)">●</span><span> 已构建：R（全量覆盖）· A · D</span>
       <span style="color:var(--blue)">●</span><span> 自动采集：L（随每次评测自动记录）</span>
       <span style="color:var(--yellow)">●</span><span> 部分就绪：C（14 条多轮候选）</span>
       <span style="color:var(--muted)">●</span><span> 待启动：B（需 Baseline 就绪）</span>
@@ -611,7 +611,7 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
     <table>
       <thead><tr><th>评测维度</th><th>子指标</th><th>业务 TTS<br>8000+</th><th>Car Bench<br>48+14</th><th>VehichemBench<br>500</th><th>当前合计</th><th>目标</th><th>状态</th></tr></thead>
       <tbody>
-        <tr><td><strong>R · 工具检索</strong></td><td style="color:var(--muted)">Recall@K · MRR · P95</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>48</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
+        <tr><td><strong>R · 工具检索</strong></td><td style="color:var(--muted)">Recall@K · MRR · P95</td><td style="text-align:center;color:var(--green)">✓ 8000+</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>8,500+</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
         <tr><td><strong>A · 执行质量</strong></td><td style="color:var(--muted)">并行 · 串行 · 恢复 · 正确性</td><td style="text-align:center;color:var(--green)">✓ 8000+</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center;color:var(--yellow)">审核中</td><td><strong>8,500+</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
         <tr><td><strong>B · A/B 增量</strong></td><td style="color:var(--muted)">TSR Δ · pass^k · 跨域 · 时延 Δ</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td><strong>—</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag" style="background:rgba(105,117,122,.1);color:var(--muted)">待启动</span></td></tr>
         <tr><td><strong>C · 上下文管理</strong></td><td style="color:var(--muted)">注入准确率 · 依赖轮次 · 长轨迹</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--purple)">候选 14</td><td style="text-align:center">—</td><td><strong>14</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag ty">规划中</span></td></tr>
