@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>评测集构建进展 · 座舱 Agent Harness</title>
+<style>
+:root {
+  --bg: #f7f5f0; --sf: #fffdf8; --sf2: #f1eee6; --bd: #ddd7cb;
+  --blue: #4f7f9f; --bdim: #e4edf3; --green: #5f8f78; --orange: #b9784a;
+  --purple: #7b6fa6; --red: #b5655c; --yellow: #a9833c;
+  --text: #273238; --muted: #69757a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: linear-gradient(180deg, #fbfaf6 0%, var(--bg) 420px);
+  color: var(--text); line-height: 1.66;
+}
+
+/* Tabs */
+.tab-nav {
+  position: sticky; top: 0; z-index: 200;
+  display: flex; gap: 0;
+  background: rgba(255,253,248,.94); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--bd);
+  padding: 0 28px;
+  box-shadow: 0 8px 24px rgba(39,50,56,.04);
+}
+.tab-nav button {
+  background: none; border: none; padding: 13px 22px;
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all .2s; font-family: inherit;
+}
+.tab-nav button:hover { color: var(--blue); }
+.tab-nav button.active { color: var(--blue); border-bottom-color: var(--blue); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #f8f3e8 0%, #edf5f1 52%, #f6f2eb 100%);
+  padding: 48px 40px; text-align: center; border-bottom: 1px solid var(--bd);
+}
+.badge {
+  display: inline-block; background: rgba(79,127,159,.1);
+  border: 1px solid rgba(79,127,159,.22); color: var(--blue);
+  padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  letter-spacing: .6px; margin-bottom: 12px;
+}
+.hero h1 { font-size: 36px; font-weight: 760; margin-bottom: 8px; }
+.hero p { font-size: 15px; color: var(--muted); max-width: 640px; margin: 0 auto; }
+.hero-meta { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 14px; }
+.mi { color: var(--muted); font-size: 13px; } .mi strong { color: var(--text); }
+
+/* Layout */
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+section { padding: 44px 0; border-bottom: 1px solid var(--bd); }
+section:last-of-type { border-bottom: none; }
+h2 { font-size: 23px; font-weight: 720; margin-bottom: 6px; display: flex; align-items: center; gap: 9px; }
+.sn {
+  background: var(--bdim); color: var(--blue); font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 6px;
+}
+.sl { color: var(--muted); margin-bottom: 24px; font-size: 14px; }
+h3 { font-size: 17px; font-weight: 700; margin: 28px 0 10px; color: var(--blue); }
+
+/* Tags */
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.tg { background: rgba(95,143,120,.12); color: var(--green); }
+.tb { background: rgba(79,127,159,.12); color: var(--blue); }
+.to { background: rgba(185,120,74,.12); color: var(--orange); }
+.tp { background: rgba(123,111,166,.12); color: var(--purple); }
+.ty { background: rgba(169,131,60,.12); color: var(--yellow); }
+.tr { background: rgba(181,101,92,.12); color: var(--red); }
+
+/* KPI */
+.kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 8px; }
+.kpi {
+  background: var(--sf); border: 1px solid var(--bd); border-radius: 10px;
+  padding: 18px 16px; text-align: center; box-shadow: 0 8px 24px rgba(39,50,56,.03);
+}
+.kpi-num { font-size: 30px; font-weight: 760; line-height: 1.2; }
+.kpi-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.c-blue { color: var(--blue); } .c-green { color: var(--green); }
+.c-orange { color: var(--orange); } .c-purple { color: var(--purple); }
+
+/* Dim grid */
+.dim-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.dim-card {
+  background: var(--sf); border: 1px solid var(--bd); border-radius: 10px;
+  padding: 20px; box-shadow: 0 8px 24px rgba(39,50,56,.03);
+  position: relative; overflow: hidden;
+}
+.dim-card.active { border-left: 4px solid var(--green); }
+.dim-card.partial { border-left: 4px solid var(--yellow); }
+.dim-card.planned { border-left: 4px solid var(--bd); opacity: .72; }
+.dim-card.auto { border-left: 4px solid var(--blue); }
+.dim-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.dim-code {
+  font-size: 13px; font-weight: 700; color: var(--blue);
+  background: var(--bdim); padding: 2px 7px; border-radius: 4px;
+}
+.dim-title { font-size: 15px; font-weight: 700; }
+.dim-sub { font-size: 12px; color: var(--muted); margin-bottom: 12px; line-height: 1.6; }
+.dim-stat { display: flex; align-items: baseline; gap: 6px; margin-bottom: 8px; }
+.dim-count { font-size: 28px; font-weight: 760; }
+.dim-target { font-size: 12px; color: var(--muted); }
+.dim-bar { height: 6px; background: var(--sf2); border-radius: 3px; overflow: hidden; margin-bottom: 6px; }
+.dim-bar-fill { height: 100%; border-radius: 3px; }
+.dim-sources { font-size: 11px; color: var(--muted); margin-top: 6px; }
+.dim-status { position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; }
+
+/* Pipeline */
+.pipe { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.pipe-node {
+  background: var(--sf2); border: 1px solid var(--bd); border-radius: 8px;
+  padding: 11px 15px; text-align: center; min-width: 80px;
+}
+.pipe-node .num { font-size: 20px; font-weight: 760; color: var(--blue); }
+.pipe-node .lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.pipe-arrow { color: var(--muted); font-size: 18px; font-weight: 300; }
+
+/* Metric block */
+.mb {
+  background: var(--sf); border: 1px solid var(--bd); border-radius: 10px;
+  margin-bottom: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(39,50,56,.04);
+}
+.mh {
+  padding: 14px 20px; display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid var(--bd); background: rgba(79,127,159,.04);
+}
+.mh h3 { margin: 0; font-size: 15px; flex: 1; color: var(--text); }
+.mb-body { padding: 20px 22px; }
+
+/* Callout */
+.cal {
+  background: rgba(79,127,159,.05); border: 1px solid rgba(79,127,159,.18);
+  border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-size: 13px;
+}
+.cal-g { background: rgba(95,143,120,.05); border-color: rgba(95,143,120,.18); }
+.cal-y { background: rgba(169,131,60,.05); border-color: rgba(169,131,60,.18); }
+.cal strong { color: var(--blue); }
+.cal-g strong { color: var(--green); }
+.cal-y strong { color: var(--yellow); }
+
+/* Table */
+.tw { overflow-x: auto; margin: 12px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  background: var(--sf2); padding: 9px 12px; text-align: left; color: var(--muted);
+  font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .4px;
+  border-bottom: 1px solid var(--bd);
+}
+td { padding: 9px 12px; border-bottom: 1px solid var(--bd); vertical-align: top; }
+tr:hover td { background: rgba(79,127,159,.02); }
+
+/* 2-col */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+/* Breakdown */
+.breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-top: 12px; }
+.bd-item {
+  background: var(--sf2); border: 1px solid var(--bd); border-radius: 8px;
+  padding: 12px; text-align: center;
+}
+.bd-num { font-size: 20px; font-weight: 760; }
+.bd-lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Coverage */
+.cov-label { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.cov-bar { display: flex; align-items: center; gap: 10px; }
+.cov-track { flex:1; height: 8px; background: var(--sf2); border-radius: 4px; overflow: hidden; }
+.cov-fill { height: 100%; border-radius: 4px; }
+.cov-pct { font-size: 13px; font-weight: 700; min-width: 42px; }
+
+/* Legend */
+.legend { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 18px; font-size: 12px; }
+.leg-item { display: flex; align-items: center; gap: 5px; color: var(--muted); }
+.leg-dot { width: 10px; height: 10px; border-radius: 3px; }
+
+/* Example cards */
+.example-card {
+  background: var(--sf); border: 1px solid var(--bd); border-radius: 10px;
+  padding: 22px; margin-bottom: 14px; box-shadow: 0 6px 20px rgba(39,50,56,.02);
+}
+.example-card h4 { font-size: 14px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.ex-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.ex-col {
+  background: var(--sf2); border: 1px solid var(--bd); border-radius: 8px;
+  padding: 14px; font-size: 12px;
+}
+.ex-col-label {
+  font-size: 10px; font-weight: 700; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .6px; margin-bottom: 8px;
+}
+.ex-col .utt { font-size: 13px; color: var(--text); font-weight: 600; margin-bottom: 6px; }
+.ex-col .meta { color: var(--muted); font-size: 11px; line-height: 1.6; }
+
+/* Code */
+.code-blk {
+  font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px;
+  background: var(--sf2); border: 1px solid var(--bd); border-radius: 6px;
+  padding: 10px 14px; color: var(--muted); line-height: 1.7;
+  overflow-x: auto; white-space: pre;
+}
+
+/* Design section styles */
+.dim-section { margin-bottom: 32px; }
+.dim-section h3 { margin: 0 0 6px 0; font-size: 16px; }
+.dim-section .dim-desc { color: var(--muted); font-size: 13px; margin-bottom: 12px; }
+.indicator-list { list-style: none; }
+.indicator-list li {
+  padding: 6px 0; border-bottom: 1px solid var(--bd); font-size: 13px;
+  display: flex; gap: 10px; align-items: baseline;
+}
+.indicator-list li:last-child { border-bottom: none; }
+.ind-code {
+  font-family: 'SF Mono', monospace; font-size: 11px; color: var(--blue);
+  background: var(--bdim); padding: 1px 6px; border-radius: 3px; white-space: nowrap;
+}
+.ind-name { color: var(--text); min-width: 140px; }
+.ind-desc { color: var(--muted); flex: 1; }
+.ind-mode { font-size: 11px; }
+
+/* Sub-nav */
+.sub-nav {
+  position: sticky; top: 46px; z-index: 99;
+  display: flex; gap: 0; flex-wrap: wrap;
+  background: rgba(255,253,248,.9); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--bd);
+  padding: 0 24px;
+}
+.sub-nav a {
+  color: var(--muted); text-decoration: none; padding: 8px 12px;
+  font-size: 11px; font-weight: 500; white-space: nowrap;
+  border-bottom: 2px solid transparent; transition: all .2s;
+}
+.sub-nav a:hover { color: var(--blue); border-bottom-color: var(--blue); }
+
+footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--bd); }
+
+@media (max-width: 800px) {
+  .dim-grid { grid-template-columns: 1fr 1fr; }
+  .kpi-row { grid-template-columns: repeat(3, 1fr); }
+  .g2, .ex-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+  .dim-grid { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ TAB NAV ═══ -->
+<div class="tab-nav">
+  <button class="active" onclick="switchTab('progress')">进展总览</button>
+  <button onclick="switchTab('design')">整体设计</button>
+</div>
+
+<!-- ═══════════════ TAB 1: 进展总览 ═══════════════ -->
+<div class="tab-panel active" id="tab-progress">
+
+<div class="hero">
+  <div class="badge">2026-08-10 · 进展汇报</div>
+  <h1>评测集分维度构建进展</h1>
+  <p>以 Harness 评测体系 R/A/B/C/D/L 六维度为骨架，按维度独立构造评测集，当前聚焦工具检索、执行质量、上下文与记忆三个方向</p>
+  <div class="hero-meta">
+    <div class="mi"><strong>6</strong> 个评测维度</div>
+    <div class="mi">已启动 <strong>4</strong> 个维度</div>
+    <div class="mi">3 个数据来源</div>
+    <div class="mi">可用用例 <strong>8,500+</strong></div>
+  </div>
+</div>
+
+<div class="sub-nav">
+  <a href="#sec-overview">总览</a>
+  <a href="#matrix">维度矩阵</a>
+  <a href="#sources">数据管线</a>
+  <a href="#mapping">维度×来源</a>
+  <a href="#next">下阶段</a>
+</div>
+
+<div class="wrap">
+
+<!-- KPI -->
+<section id="sec-overview">
+  <h2><span class="sn">总览</span> 核心指标</h2>
+  <div class="kpi-row">
+    <div class="kpi"><div class="kpi-num c-blue">8,000<span style="font-size:15px;font-weight:500">+</span></div><div class="kpi-label">语音多样性用例</div></div>
+    <div class="kpi"><div class="kpi-num c-green">48</div><div class="kpi-label">工具调用可用用例</div></div>
+    <div class="kpi"><div class="kpi-num c-orange">500</div><div class="kpi-label">领域知识审核中</div></div>
+    <div class="kpi"><div class="kpi-num c-purple">14</div><div class="kpi-label">多轮交互候选</div></div>
+    <div class="kpi"><div class="kpi-num" style="color:var(--muted)">2</div><div class="kpi-label">维度待启动</div></div>
+  </div>
+</section>
+
+<!-- 维度矩阵 -->
+<section id="matrix">
+  <h2><span class="sn">矩阵</span> 六维度覆盖总览</h2>
+  <p class="sl">以 R/A/B/C/D/L 为骨架标注进展。<strong>时延 (L) 为每次跑评测的副产品</strong>，随用例积累自动覆盖上千次测量。</p>
+
+  <div class="legend">
+    <div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div> 已构建</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--yellow)"></div> 部分就绪 / 审核中</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--bd)"></div> 待启动</div>
+  </div>
+
+  <div class="dim-grid">
+    <!-- R -->
+    <div class="dim-card active">
+      <div class="dim-status"><span class="tag tg">已构建</span></div>
+      <div class="dim-header"><span class="dim-code">R</span><span class="dim-title">工具检索</span></div>
+      <div class="dim-sub">R-1 Required Tool Recall@K<br>R-2 排序质量 (MRR / nDCG)<br>R-3 检索时延 P95</div>
+      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:10%;background:var(--green)"></div></div>
+      <div class="dim-sources">来源：Car Bench 工具映射</div>
+    </div>
+    <!-- A -->
+    <div class="dim-card active">
+      <div class="dim-status"><span class="tag tg">已构建</span></div>
+      <div class="dim-header"><span class="dim-code">A</span><span class="dim-title">执行质量</span></div>
+      <div class="dim-sub">A-1 并行调度准确率<br>A-2 串行顺序正确率<br>A-3 工具错误恢复率<br>A-4 工具调用正确性</div>
+      <div class="dim-stat"><span class="dim-count c-green">8,500<span style="font-size:14px">+</span></span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--green)"></div></div>
+      <div class="dim-sources">来源：Car Bench (48) + 业务 TTS (8000+) + VehichemBench (500 审核中)</div>
+    </div>
+    <!-- B -->
+    <div class="dim-card planned">
+      <div class="dim-status"><span style="font-size:11px;color:var(--muted)">待启动</span></div>
+      <div class="dim-header"><span class="dim-code">B</span><span class="dim-title">A/B 增量价值</span></div>
+      <div class="dim-sub">B-1 任务成功率 Δ<br>B-2 pass^k 稳定性 Δ<br>B-3 跨域成功率 Δ<br>B-4 端到端时延 Δ<br>B-5 pass@k Δ</div>
+      <div class="dim-stat"><span class="dim-count" style="color:var(--muted)">—</span><span class="dim-target">目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:0%"></div></div>
+      <div class="dim-sources">需部署 Baseline 对照组后启动</div>
+    </div>
+    <!-- C -->
+    <div class="dim-card partial">
+      <div class="dim-status"><span class="tag ty">规划中</span></div>
+      <div class="dim-header"><span class="dim-code">C</span><span class="dim-title">上下文管理</span></div>
+      <div class="dim-sub">C-1 上下文注入准确率<br>C-2 依赖轮次成功率<br>C-3 长轨迹完成率</div>
+      <div class="dim-stat"><span class="dim-count c-yellow">14</span><span class="dim-target">条候选 / 目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:3%;background:var(--yellow)"></div></div>
+      <div class="dim-sources">来源：Car Bench 复杂场景 → 多轮交互演化</div>
+    </div>
+    <!-- D -->
+    <div class="dim-card active">
+      <div class="dim-status"><span class="tag tg">已构建</span></div>
+      <div class="dim-header"><span class="dim-code">D</span><span class="dim-title">记忆管理</span></div>
+      <div class="dim-sub">D-1 写入成功率<br>D-2 归档维度准确率<br>D-3 记忆内容准确率<br>D-4 召回注入准确率</div>
+      <div class="dim-stat"><span class="dim-count c-green">48</span><span class="dim-target">条 / 目标 500+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:10%;background:var(--green)"></div></div>
+      <div class="dim-sources">来源：Car Bench（含 memory 写入与消费）</div>
+    </div>
+    <!-- L -->
+    <div class="dim-card auto">
+      <div class="dim-status"><span class="tag tb">自动采集</span></div>
+      <div class="dim-header"><span class="dim-code">L</span><span class="dim-title">时延拆解</span></div>
+      <div class="dim-sub">L-1 Harness 自身开销<br>L-2 并行调度收益 (PSG)</div>
+      <div class="dim-stat"><span class="dim-count" style="color:var(--blue)">随跑随测</span><span class="dim-target">目标 1,000+</span></div>
+      <div class="dim-bar"><div class="dim-bar-fill" style="width:100%;background:var(--blue)"></div></div>
+      <div class="dim-sources">每次评测自动记录时延，不单独构造评测集。随 R/A/C/D 用例累积，样本自然覆盖上千次。</div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px;background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:20px;">
+    <div style="font-size:14px;font-weight:700;margin-bottom:14px;">维度启动率</div>
+    <div class="cov-label">已启动 4/6 维度（R · A · D · L），覆盖 Harness 核心链路</div>
+    <div class="cov-bar">
+      <div class="cov-track"><div class="cov-fill" style="width:67%;background:linear-gradient(90deg,var(--green),var(--green) 50%,var(--yellow) 50%,var(--yellow) 67%,var(--sf2) 67%)"></div></div>
+      <div class="cov-pct" style="color:var(--yellow)">67%</div>
+    </div>
+    <div style="display:flex;gap:18px;margin-top:10px;font-size:12px;color:var(--muted);flex-wrap:wrap">
+      <span style="color:var(--green)">●</span><span> 已构建：R · A · D（来自 Car Bench）</span>
+      <span style="color:var(--blue)">●</span><span> 自动采集：L（随每次评测自动记录）</span>
+      <span style="color:var(--yellow)">●</span><span> 部分就绪：C（14 条多轮候选）</span>
+      <span style="color:var(--muted)">●</span><span> 待启动：B（需 Baseline 就绪）</span>
+    </div>
+  </div>
+</section>
+
+<!-- 三条管线 -->
+<section id="sources">
+  <h2><span class="sn">来源</span> 三条数据管线</h2>
+
+  <div class="mb">
+    <div class="mh"><h3>管线 1 · 业务评测集 → TTS 语音多样性增强</h3><span class="tag tg">已完成</span></div>
+    <div class="mb-body">
+      <div class="pipe">
+        <div class="pipe-node"><div class="num">5,000<span style="font-size:12px">+</span></div><div class="lbl">业务原始文本用例</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num">6,000<span style="font-size:12px">+</span></div><div class="lbl">TTS 方言/年龄转换</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num">2,000<span style="font-size:12px">+</span></div><div class="lbl">语气变化增强</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--green)">8,000<span style="font-size:12px">+</span></div><div class="lbl">语音评测集总规模</div></div>
+      </div>
+      <div class="cal cal-g">
+        <strong>设计思路：</strong>真实座舱输入是乘客语音，不同方言、年龄、语气不应影响工具调用正确性。8000+ 条语音用例本质是对同一批 groundtruth 的输入多样性增强——同一个意图用四川话、老年声线、急切口吻说出来，Harness 最终调用的工具和参数应该一致。评测落点在 <strong>A-4 工具调用正确性</strong>。
+      </div>
+      <div class="breakdown">
+        <div class="bd-item"><div class="bd-num c-blue">6,000<span style="font-size:11px">+</span></div><div class="bd-lbl">方言/年龄变体</div></div>
+        <div class="bd-item"><div class="bd-num c-green">2,000<span style="font-size:11px">+</span></div><div class="bd-lbl">语气/情感变化</div></div>
+        <div class="bd-item"><div class="bd-num c-purple">5,000<span style="font-size:11px">+</span></div><div class="bd-lbl">原始 groundtruth 模板</div></div>
+        <div class="bd-item"><div class="bd-num" style="color:var(--orange)">~1.6x</div><div class="bd-lbl">平均扩充倍率</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TTS 示例 -->
+  <div class="example-card" style="margin-top:0;">
+    <h4><span class="tag tb">示例</span> 同一意图，三种语音变体 → 同一 groundtruth</h4>
+    <div class="ex-grid">
+      <div class="ex-col">
+        <div class="ex-col-label">变体 1 · 标准普通话</div>
+        <div class="utt">"把空调调到 24 度"</div>
+        <div class="meta">方言：标准普通话 · 年龄：青年 · 语气：中性</div>
+      </div>
+      <div class="ex-col">
+        <div class="ex-col-label">变体 2 · 四川话 + 老年</div>
+        <div class="utt">"把那个空调整到 24 度嘛"</div>
+        <div class="meta">方言：西南官话 · 年龄：老年 · 语气：随意</div>
+      </div>
+      <div class="ex-col">
+        <div class="ex-col-label">变体 3 · 急切口吻</div>
+        <div class="utt">"快快快把空调调到24度！"</div>
+        <div class="meta">方言：标准普通话 · 年龄：中年 · 语气：急促</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0;">
+      <span style="font-size:13px;color:var(--muted)">三个语音文件 (.wav)</span>
+      <span style="font-size:20px;color:var(--green);font-weight:700">→</span>
+      <span style="font-size:13px;color:var(--muted)">同一个 groundtruth_ref</span>
+    </div>
+    <div class="g2">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;">Manifest 索引</div>
+        <div class="code-blk">{
+  "case_id": "tts_ac_001_sichuan",
+  "mode": "mock_injection",
+  "audio_path": "tts/sichuan_male_elder/ac_001.wav",
+  "dialect": "西南官话",
+  "age_group": "elder",
+  "tone": "casual",
+  "groundtruth_ref": "ac_001"
+}</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;">Groundtruth（按 groundtruth_ref 关联）</div>
+        <div class="code-blk">{
+  "groundtruth_registry": {
+    "ac_001": {
+      "desc": "设置空调温度到24度",
+      "tool_calls": [
+        { "name": "set_aircon",
+          "args": { "temp": 24 } }
+      ]
+    }
+  }
+}</div>
+      </div>
+    </div>
+    <div class="cal cal-g" style="margin-top:10px;"><strong>评测流程：</strong>Harness 读 <code>audio_path</code> → ASR → 工具调用 → 评测框架按 <code>groundtruth_ref</code> 查 groundtruth → 比对 A-4 正确性。</div>
+  </div>
+
+  <div class="mb">
+    <div class="mh"><h3>管线 2 · Car Bench → 工具 API 映射</h3><span class="tag tg">已完成</span></div>
+    <div class="mb-body">
+      <div class="pipe">
+        <div class="pipe-node"><div class="num">126</div><div class="lbl">Car Bench 原始</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--red)">77</div><div class="lbl">无对应工具</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--green)">48</div><div class="lbl">可用用例</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--purple)">14</div><div class="lbl">复杂场景保留</div></div>
+      </div>
+      <div class="g2">
+        <div class="cal"><strong>转换方法：</strong>Car Bench query 描述拆解为 <code>instruction</code> / <code>memory</code> / <code>context</code> / <code>status</code> 四个上下文字段；Ground Truth 中的工具 API 一对一映射为自有工具接口（<code>gt_actions</code>），保留调用参数结构。</div>
+        <div class="cal cal-y"><strong>77 条未映射：</strong>涉及邮件、日历、导航等座舱域外能力，当前工具集中无对应接口，暂不纳入本轮评测。</div>
+      </div>
+      <div class="breakdown">
+        <div class="bd-item"><div class="bd-num c-green">48</div><div class="bd-lbl">覆盖 R · A · D</div></div>
+        <div class="bd-item"><div class="bd-num c-purple">14</div><div class="bd-lbl">覆盖 C 候选</div></div>
+        <div class="bd-item"><div class="bd-num" style="color:var(--red)">77</div><div class="bd-lbl">暂不适用</div></div>
+        <div class="bd-item"><div class="bd-num" style="color:var(--blue)">38%</div><div class="bd-lbl">整体可用率</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Car Bench 示例 -->
+  <div class="example-card" style="margin-top:0;">
+    <h4><span class="tag tg">示例</span> 实际用例格式（eval_set_v1.json schema + 建议加的 mode 字段）</h4>
+    <div class="g2">
+      <div>
+        <div class="code-blk" style="max-height:380px;overflow-y:auto;">{
+  "task_id": "base_1",
+  "task_type": "base",
+  "mode": "mock_injection",
+
+  "instruction": "阳光太刺眼了，帮我把遮阳帘关上一半吧。",
+  "memory": [
+    "用户40岁",
+    "用户对话风格为闲聊式，随意、健谈",
+    "用户偶尔使用语音助手",
+    "用户偏好简单日常的语言而非技术术语"
+  ],
+  "context": [
+    "地点为青岛", "时间为4月8日早上7:15",
+    "清晨驾驶，太阳刺眼",
+    "正在驾驶（车速未知）",
+    "车内仅有驾驶员"
+  ],
+  "status": [
+    "遮阳帘当前完全打开(100%)"
+  ],
+
+  "gt_actions": [
+    { "name": "shade_curtain_opener",
+      "kwargs": { "function": "set",
+                   "unit": "percent", "value": 50 },
+      "index": 0,
+      "dependent_on_action_index": null }
+  ]
+}</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;color:var(--muted);margin-bottom:8px;">字段映射到评测维度</div>
+        <table style="font-size:11px;">
+          <tr><th style="font-size:10px;">字段</th><th style="font-size:10px;">对应维度</th></tr>
+          <tr><td><code>instruction</code></td><td style="color:var(--muted)">用户口语化指令（短句）</td></tr>
+          <tr><td><code>memory</code></td><td style="color:var(--purple)"><strong>D 维度</strong> — 用户长期偏好/画像</td></tr>
+          <tr><td><code>context</code></td><td style="color:var(--yellow)"><strong>C 维度</strong> — 当前场景上下文</td></tr>
+          <tr><td><code>status</code></td><td style="color:var(--blue)"><strong>A 维度</strong> — 车辆当前状态</td></tr>
+          <tr><td><code>gt_actions</code></td><td style="color:var(--green)"><strong>R/A 维度</strong> — 期望工具调用</td></tr>
+          <tr><td><code>mode</code></td><td style="color:var(--muted)">【建议加】mock_injection / ab_compare / memory_recall</td></tr>
+        </table>
+        <div class="cal" style="margin-top:12px;font-size:12px;">
+          <strong>Memory 消费示例 (D-4)：</strong>"感觉空气有点闷，帮我把风扇打开吧" — 用户未指定档位，但 <code>memory</code> 中有偏好 3 档，groundtruth 期望自动补全 <code>conditioner_speed(level=3)</code>。评测 Harness 是否正确召回并注入了 memory。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb">
+    <div class="mh"><h3>管线 3 · VehichemBench → 领域知识推理</h3><span class="tag ty">审核中</span></div>
+    <div class="mb-body">
+      <div class="pipe">
+        <div class="pipe-node"><div class="num">500</div><div class="lbl">原始用例转换</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--blue)">模型</div><div class="lbl">自动初筛</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--yellow)">人工</div><div class="lbl">争议复审</div></div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node"><div class="num" style="color:var(--muted)">--</div><div class="lbl">最终评测集</div></div>
+      </div>
+      <div class="cal cal-y"><strong>当前进展：</strong>模型已对 500 条转换结果完成首轮检视，标记出存在量纲冲突或答案争议的条目；已单独抽出，由人工逐条复审确认。审核完成后主要覆盖 <strong>A-4 工具调用正确性</strong>。</div>
+      <div class="breakdown">
+        <div class="bd-item"><div class="bd-num c-orange">500</div><div class="bd-lbl">转换总量</div></div>
+        <div class="bd-item"><div class="bd-num c-blue">模型</div><div class="bd-lbl">首轮检视完成</div></div>
+        <div class="bd-item"><div class="bd-num c-yellow">人工</div><div class="bd-lbl">复审进行中</div></div>
+        <div class="bd-item"><div class="bd-num" style="color:var(--muted)">A</div><div class="bd-lbl">目标覆盖维度</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VehichemBench 示例 -->
+  <div class="example-card" style="margin-top:0;">
+    <h4><span class="tag to">示例</span> 模型初筛 → 人工复审</h4>
+    <div class="g2">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:6px;">✓ 审核通过</div>
+        <div class="code-blk">{
+  "case_id": "vchem_012",
+  "instruction": "前挡风玻璃起雾了，帮我除雾",
+  "status": ["挡风玻璃有雾气"],
+  "gt_actions": [
+    { "name": "set_aircon",
+      "kwargs": { "mode": "defrost",
+                  "fan_speed": "high" } }
+  ]
+}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">量纲一致、答案无争议</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:6px;">✗ 待人工复审</div>
+        <div class="code-blk">{
+  "case_id": "vchem_087",
+  "instruction": "座椅表面温度太高了，
+               帮我降温到不烫的程度",
+  "status": ["座椅表面温度52°C"],
+  "gt_actions": [
+    { "name": "set_seat_ventilation",
+      "kwargs": { "level": "???" } }
+    // "不烫的程度"是几档？多少度？
+  ]
+}</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">量纲歧义，需人工定义阈值</div>
+      </div>
+    </div>
+    <div class="cal cal-y" style="margin-top:12px;"><strong>审核流程：</strong>① 模型逐条检查量纲一致性、参数合理性；② 标记争议条目（模糊量词、缺失单位、多解问题）；③ 人工复审，修正或剔除后归入最终评测集。</div>
+  </div>
+</section>
+
+<!-- 映射表 -->
+<section id="mapping">
+  <h2><span class="sn">映射</span> 维度 × 数据源对照</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>评测维度</th><th>子指标</th><th>业务 TTS<br>8000+</th><th>Car Bench<br>48+14</th><th>VehichemBench<br>500</th><th>当前合计</th><th>目标</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr><td><strong>R · 工具检索</strong></td><td style="color:var(--muted)">Recall@K · MRR · P95</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>48</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
+        <tr><td><strong>A · 执行质量</strong></td><td style="color:var(--muted)">并行 · 串行 · 恢复 · 正确性</td><td style="text-align:center;color:var(--green)">✓ 8000+</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center;color:var(--yellow)">审核中</td><td><strong>8,500+</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
+        <tr><td><strong>B · A/B 增量</strong></td><td style="color:var(--muted)">TSR Δ · pass^k · 跨域 · 时延 Δ</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td><strong>—</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag" style="background:rgba(105,117,122,.1);color:var(--muted)">待启动</span></td></tr>
+        <tr><td><strong>C · 上下文管理</strong></td><td style="color:var(--muted)">注入准确率 · 依赖轮次 · 长轨迹</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--purple)">候选 14</td><td style="text-align:center">—</td><td><strong>14</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag ty">规划中</span></td></tr>
+        <tr><td><strong>D · 记忆管理</strong></td><td style="color:var(--muted)">写入 · 归档 · 内容 · 召回</td><td style="text-align:center">—</td><td style="text-align:center;color:var(--green)">✓ 48</td><td style="text-align:center">—</td><td><strong>48</strong></td><td style="color:var(--muted)">500+</td><td><span class="tag tg">已构建</span></td></tr>
+        <tr><td><strong>L · 时延拆解</strong></td><td style="color:var(--muted)">Harness Overhead · PSG</td><td style="text-align:center;color:var(--blue)">自动</td><td style="text-align:center;color:var(--blue)">自动</td><td style="text-align:center;color:var(--blue)">自动</td><td><strong>随跑随测</strong></td><td style="color:var(--muted)">1,000+</td><td><span class="tag tb">自动采集</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 下一阶段 -->
+<section id="next">
+  <h2><span class="sn">计划</span> 下一阶段</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>优先级</th><th>维度</th><th>任务</th><th>预期产出</th><th>依赖</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tag tr">P0</span></td><td>A</td><td>VehichemBench 人工复审完成</td><td>500 条领域知识评测用例定稿</td><td style="color:var(--muted)">人工带宽</td></tr>
+        <tr><td><span class="tag tr">P0</span></td><td>C</td><td>Car Bench 14 条复杂场景 → 多轮交互演化</td><td>500+ 条多轮上下文评测用例</td><td style="color:var(--muted)">场景设计</td></tr>
+        <tr><td><span class="tag tr">P0</span></td><td>D</td><td>记忆评测集构建：从业务用例中抽取 Memory 写入/消费场景</td><td>500+ 条 Memory 评测用例（含写入+召回）</td><td style="color:var(--muted)">业务用例梳理</td></tr>
+        <tr><td><span class="tag ty">P1</span></td><td>B</td><td>A/B 对比集构建 + Baseline 环境部署</td><td>500+ 条 ab_compare 用例</td><td style="color:var(--muted)">Baseline 就绪</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div>
+<footer>座舱 Agent Harness · 评测集构建进展 · 2026-08-10</footer>
+</div>
+
+<!-- ═══════════════ TAB 3: 整体设计（仅 R/A/B/C/D/L） ═══════════════ -->
+<div class="tab-panel" id="tab-design">
+<div class="hero" style="padding:40px;">
+  <div class="badge">v1.4 精简版</div>
+  <h1>座舱 Agent Harness 评测体系</h1>
+  <p>聚焦 R/A/B/C/D/L 六维度，覆盖工具检索、执行质量、A/B 增量、上下文管理、记忆管理、时延拆解</p>
+</div>
+
+<div class="sub-nav">
+  <a href="#dsg-boundary">01 边界</a>
+  <a href="#dsg-R">R 工具检索</a>
+  <a href="#dsg-A">A 执行质量</a>
+  <a href="#dsg-B">B A/B 增量</a>
+  <a href="#dsg-C">C 上下文</a>
+  <a href="#dsg-D">D 记忆</a>
+  <a href="#dsg-L">L 时延</a>
+  <a href="#dsg-appendix">附录</a>
+</div>
+
+<div class="wrap">
+
+<!-- 边界 -->
+<section id="dsg-boundary">
+  <h2><span class="sn">01</span> Harness 评测边界</h2>
+  <div class="cal"><strong>判定口径：</strong>模型版本固定时，指标变化应主要来自 Harness 行为。正确工具未进入 Top-K → 归因工具检索；已进入 Top-K 但模型没选 → 归因模型；模型输出正确但执行顺序/重试/状态更新错了 → 归因 Harness 执行层。</div>
+  <div class="g2" style="margin-top:16px;">
+    <div>
+      <h3 style="color:var(--green)">纳入范围</h3>
+      <div style="font-size:13px;color:var(--muted);line-height:2.1;">
+        • 工具目录检索：从 N 个工具召回 Top-K 候选的召回率、排序质量和检索时延<br>
+        • 工具调用并行/串行调度正确性<br>
+        • 工具调用失败时的恢复动作：retry / fallback / abort_gracefully<br>
+        • 多个业务域的指令同时并发执行质量<br>
+        • Harness 自身引入的额外响应时延<br>
+        • 给下游传递的上下文/记忆信息完整性
+      </div>
+    </div>
+    <div>
+      <h3 style="color:var(--red)">不纳入范围</h3>
+      <div style="font-size:13px;color:var(--muted);line-height:2.1;">
+        • 模型在 Top-K 候选中的最终选择<br>
+        • 参数生成（填什么值）<br>
+        • 意图分解（识别子意图）<br>
+        • 歧义消解（主动追问）<br>
+        • 全双工对话中的打断/误触发处理
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- R -->
+<section id="dsg-R">
+  <h2><span class="sn">R</span> 工具检索</h2>
+  <p class="sl">根据用户 prompt 从工具库 N 中召回 Top-K 候选工具，再让模型在候选工具中选择和填参。检索本身必须单独评测。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">R-1</span></td><td><strong>Required Tool Recall@K</strong> — 任务真正需要的工具是否都出现在 Top-K 候选列表中</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">R-2</span></td><td><strong>Tool Ranking Quality</strong> — 正确工具的排序质量（MRR / nDCG@K），排序越靠前模型选错的概率越低</td><td>Rule-based</td><td><span class="tag ty">P1</span></td></tr>
+    <tr><td><span class="ind-code">R-3</span></td><td><strong>Tool Retrieval Latency P95</strong> — 检索步骤本身的时延，按工具库规模 N 分桶报告</td><td>自动计时</td><td><span class="tag tr">P0</span></td></tr>
+  </table>
+</section>
+
+<!-- A -->
+<section id="dsg-A">
+  <h2><span class="sn">A</span> 执行质量（Execution）</h2>
+  <p class="sl">通过 Mock Injection 将固定模型输出注入 Harness，观察执行层本身的并行/串行/恢复/正确性行为。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">A-1</span></td><td><strong>Parallel Call Accuracy</strong> — 标记为 parallel 的工具是否真正并行发出（时间戳差值 ≤ 50ms）</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">A-2</span></td><td><strong>Serial Order Correctness</strong> — 有依赖关系的工具是否按正确顺序串行执行</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">A-3</span></td><td><strong>Tool Error Recovery Rate</strong> — 故障注入后 Harness 的恢复动作（retry/fallback/abort）是否符合预期</td><td>LLM-as-Judge</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">A-4</span></td><td><strong>Correctness</strong> — Harness 输出的工具调用 (name + args) 与 groundtruth 是否一致</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+  </table>
+</section>
+
+<!-- B -->
+<section id="dsg-B">
+  <h2><span class="sn">B</span> A/B 增量价值（Delta）</h2>
+  <p class="sl">同一模型、同一批 case，加 Harness 后比 Baseline 好多少。公式永远是 Δ = Harness − Baseline。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">B-1</span></td><td><strong>Task Success Rate Δ</strong> — Harness 组的任务成功率比 Baseline 组高多少</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">B-2</span></td><td><strong>pass^k Δ (k=3)</strong> — 同一条 case 连跑 k 次，k 次全成功才算稳定，比较两组的稳定性差异</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">B-3</span></td><td><strong>Cross-domain TSR Δ</strong> — 只看跨域 case（如空调+导航+音乐），再算一次 B-1 的增量</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">B-4</span></td><td><strong>E2E Latency Δ</strong> — Harness 组 vs Baseline 组的端到端耗时差值（变快或变慢）</td><td>自动计时</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">B-5</span></td><td><strong>pass@k Δ</strong> — 同一条 case 各跑 k 次，至少 1 次成功即算通过，比较两组通过率差异（比 pass^k 更宽松的稳定性视角）</td><td>Rule-based</td><td><span class="tag ty">P1</span></td></tr>
+  </table>
+</section>
+
+<!-- C -->
+<section id="dsg-C">
+  <h2><span class="sn">C</span> 上下文管理（多轮对话）</h2>
+  <p class="sl">同一会话内的短期上下文传递。Dim C 是同一会话内的上下文；Dim D 是跨会话的长期记忆。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">C-1</span></td><td><strong>Context Injection Accuracy</strong> — 该传给下一轮的上下文字段，Harness 有没有真的传进去（JSON 字段等值比较）</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">C-2</span></td><td><strong>Context-dependent Turn Success</strong> — C-1 看「有没有传」，C-2 看「传了之后这一轮做对没有」</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">C-3</span></td><td><strong>Trajectory Completion Rate</strong> — 整条多轮任务是否从头到尾所有 checkpoint 都通过</td><td>Rule / Hybrid</td><td><span class="tag tr">P0</span></td></tr>
+  </table>
+</section>
+
+<!-- D -->
+<section id="dsg-D">
+  <h2><span class="sn">D</span> 记忆管理（跨会话 Memory）</h2>
+  <p class="sl">跨会话长期记忆的写入、归档、内容准确与跨会话召回注入。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">D-1</span></td><td><strong>Memory Write Success</strong> — 记忆有没有成功落库（最低层存储可用性指标，不判断写得对不对）</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">D-2</span></td><td><strong>Memory Category Accuracy</strong> — 记忆写到了正确的归档维度里吗（location / preference / contact / safety）</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">D-3</span></td><td><strong>Memory Slot Accuracy</strong> — 写入的 key、value、scope 是否正确</td><td>Rule / Hybrid</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">D-4</span></td><td><strong>Memory Recall & Injection Accuracy</strong> — 新会话中需要某 memory 时，Harness 有没有检索出来并注入 Context</td><td>Rule-based</td><td><span class="tag tr">P0</span></td></tr>
+  </table>
+</section>
+
+<!-- L -->
+<section id="dsg-L">
+  <h2><span class="sn">L</span> 时延拆解</h2>
+  <p class="sl">时延是每次跑评测的副产品，不需要单独构造评测集。B-4 看端到端体验是否变快；本节进一步拆开看工具检索和执行前编排各耗时多少，以及并行调度节省了多少时间。</p>
+  <table>
+    <tr><th style="width:120px">指标</th><th>定义</th><th>判定方式</th><th>优先级</th></tr>
+    <tr><td><span class="ind-code">L-1</span></td><td><strong>Harness Overhead</strong> — 工具检索耗时 + 执行前编排耗时（解析+路由+调度），目标 P95 &lt; 40ms</td><td>Harness 内部埋点</td><td><span class="tag tr">P0</span></td></tr>
+    <tr><td><span class="ind-code">L-2</span></td><td><strong>Parallel Scheduling Gain</strong> — 串行理论总时延 − 并行实际时延，工具数越多收益越大</td><td>计算推导</td><td><span class="tag tr">P0</span></td></tr>
+  </table>
+</section>
+
+<!-- 评测集子集组织 -->
+<section id="dsg-appendix">
+  <h2><span class="sn">附录</span> 评测集子集组织与目标数量</h2>
+  <table>
+    <tr><th>子集</th><th>目标数量</th><th>维度</th><th>关键字段</th></tr>
+    <tr><td><strong>工具检索集</strong></td><td>≥ 500条</td><td><span class="tag tb">R</span></td><td style="color:var(--muted)">mode=tool_retrieval, spec.required_tools, spec.hard_negatives</td></tr>
+    <tr><td><strong>并行调度集</strong></td><td>≥ 150条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=parallel, model_output_mock</td></tr>
+    <tr><td><strong>串行依赖集</strong></td><td>≥ 150条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">execution_constraint=serial, depends_on</td></tr>
+    <tr><td><strong>故障注入集</strong></td><td>≥ 200条</td><td><span class="tag tb">A</span></td><td style="color:var(--muted)">fault_injection, expected_recovery</td></tr>
+    <tr><td><strong>A/B 对比集</strong></td><td>≥ 500条</td><td><span class="tag tg">B</span></td><td style="color:var(--muted)">mode=ab_compare, spec.groundtruth/judge_spec</td></tr>
+    <tr><td><strong>多轮上下文集</strong></td><td>≥ 500条</td><td><span class="tag tp">C</span></td><td style="color:var(--muted)">spec.turns[], spec.required_context</td></tr>
+    <tr><td><strong>Memory 集</strong></td><td>≥ 500条</td><td><span class="tag tp">D</span></td><td style="color:var(--muted)">mode=memory_write / memory_recall, spec.expected_write</td></tr>
+    <tr><td><strong>时延基准</strong></td><td>自动累积</td><td><span class="tag tb">L</span></td><td style="color:var(--muted)">每次评测自动记录，不单独构造</td></tr>
+  </table>
+</section>
+
+</div>
+<footer>座舱 Agent Harness · 评测体系设计（R/A/B/C/D/L 六维度）</footer>
+</div>
+
+<!-- ═══ TAB SWITCH ═══ -->
+<script>
+function switchTab(name) {
+  document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector('#tab-' + name).classList.add('active');
+  document.querySelector('.tab-nav button[onclick*="' + name + '"]').classList.add('active');
+}
+</script>
+
+</body>
+</html>
