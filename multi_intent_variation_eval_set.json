@@ -32,6 +32,7 @@
     {
       "id": "multi_001",
       "query": "车外灯光迎送宾调到瞬息，然后关上转向补盲HUD，顺便座椅按摩档位数值相对调大啊",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -80,6 +81,7 @@
     {
       "id": "multi_002",
       "query": "转向模式关闭运动模式，那个…前排座垫通风设高1档也弄下啊",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -119,6 +121,7 @@
     {
       "id": "multi_003",
       "query": "能不能帮我打开灯光页面，顺便关闭二分之一全部遮阳帘",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -156,6 +159,7 @@
     {
       "id": "multi_004",
       "query": "请帮我二排左座垫通风切换至最低，对了，车窗开大一点也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -194,6 +198,7 @@
     {
       "id": "multi_005",
       "query": "麻烦左侧坐垫加热调高1档，对了，二排右向后也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -233,6 +238,7 @@
     {
       "id": "multi_006",
       "query": "前排中控亮度设置为百分之十，同时开开贴贴模式也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -269,6 +275,7 @@
     {
       "id": "multi_007",
       "query": "打开一下我的氛围灯的颜色渐变模式，接着全车座椅高度调到50%啊",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -307,6 +314,7 @@
     {
       "id": "multi_008",
       "query": "麻烦燃油补电调小23，对了，副驾座椅靠背角度往后降低一些也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -346,6 +354,7 @@
     {
       "id": "multi_009",
       "query": "副驾座椅按摩调小2档，顺便打开舒适制动",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -383,6 +392,7 @@
     {
       "id": "multi_010",
       "query": "二排左座椅腿托往后调20%…嗯…还有开启紧急录制",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -421,6 +431,7 @@
     {
       "id": "multi_011",
       "query": "关闭钥匙感应开启后备箱，然后再把打开一键加热模式弄一下啊",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -456,6 +467,7 @@
     {
       "id": "multi_012",
       "query": "关上自动后视镜加热开关，那个，打开左边位置座椅按摩功能",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -491,6 +503,7 @@
     {
       "id": "multi_013",
       "query": "关闭炫光提示灯语行吗？然后上锁冷暖箱儿童锁啊",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -525,6 +538,7 @@
     {
       "id": "multi_014",
       "query": "光感天幕智能调光开关关闭，然后三排切换到热石理疗模式",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -561,6 +575,7 @@
     {
       "id": "multi_015",
       "query": "音效切换为经典，接着副驾座椅座垫往前调20%吧",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -600,6 +615,7 @@
     {
       "id": "multi_016",
       "query": "把香氛浓度增加20%，另外把上锁车窗面板的儿童锁也处理下哈",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -637,6 +653,7 @@
     {
       "id": "multi_017",
       "query": "上锁冷暖箱儿童锁，然后再把车窗降一下弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -671,6 +688,7 @@
     {
       "id": "multi_018",
       "query": "放下主驾车窗，就是，音效切换到奢享剧院也弄一下",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -707,6 +725,7 @@
     {
       "id": "multi_019",
       "query": "关掉壁炉模式，顺便激活舒适进出开关呀",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -741,6 +760,7 @@
     {
       "id": "multi_020",
       "query": "开一下转向灯自动关闭，顺便第二排的左侧座椅按摩模式调整至蝶形哦",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -777,6 +797,7 @@
     {
       "id": "multi_021",
       "query": "能不能帮我退出空气悬架迎宾模式，顺便打开全车座椅加热哦",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -812,6 +833,7 @@
     {
       "id": "multi_022",
       "query": "退出四门解锁，还有关闭左侧座椅通风也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -848,6 +870,7 @@
     {
       "id": "multi_023",
       "query": "打开车内220v插座，同时调小大灯高度也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -882,6 +905,7 @@
     {
       "id": "multi_024",
       "query": "打开车窗亮度锁车自动调节，还有关掉一键调平模式也帮我弄下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -916,6 +940,7 @@
     {
       "id": "multi_025",
       "query": "隐私车窗黑15，接着二排座椅按摩调低1档",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -954,6 +979,7 @@
     {
       "id": "multi_026",
       "query": "能不能帮我前遮阳帘开大点，顺便右后车窗透明度调到70%呗",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -994,6 +1020,7 @@
     {
       "id": "multi_027",
       "query": "展开二排零重力座椅，对了，前排座椅调到最后也弄一下啊",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1032,6 +1059,7 @@
     {
       "id": "multi_028",
       "query": "关闭空气净化，对了，给我把右后位置座椅按摩提高三档也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1070,6 +1098,7 @@
     {
       "id": "multi_029",
       "query": "关闭电子后视镜自动亮度，同时打开全车座垫加热也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -1106,6 +1135,7 @@
     {
       "id": "multi_030",
       "query": "主驾座椅靠背调到最后，那个，关闭车窗儿童锁",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -1143,6 +1173,7 @@
     {
       "id": "multi_031",
       "query": "调小点左边座椅加热拜拜，对了，开启靠背通风最小档也弄一下啊",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1181,6 +1212,7 @@
     {
       "id": "multi_032",
       "query": "设置蓝牙车外解闭锁模式，顺便关掉冷暖箱定时工作",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -1217,6 +1249,7 @@
     {
       "id": "multi_033",
       "query": "开启前排座垫通风，接着车门开合角度调到标准",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -1254,6 +1287,7 @@
     {
       "id": "multi_034",
       "query": "香氛浓度数值调大…嗯…还有激活屏幕清洁开关啊",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -1288,6 +1322,7 @@
     {
       "id": "multi_035",
       "query": "打开车内关怀模式，另外把二排右隐私车窗透10也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1324,6 +1359,7 @@
     {
       "id": "multi_036",
       "query": "开开一下我的悬架拖挂车辆模式，顺便右后位置座椅按摩模式调成蛇形",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1360,6 +1396,7 @@
     {
       "id": "multi_037",
       "query": "麻烦充电限值调低20，对了，关闭冷暖箱冷冻模式也弄一下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1396,6 +1433,7 @@
     {
       "id": "multi_038",
       "query": "方向盘加热调到最大，还有关上智能辅助掉头也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1431,6 +1469,7 @@
     {
       "id": "multi_039",
       "query": "右侧座椅通风调到最低，然后吸顶屏度数前点",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -1468,6 +1507,7 @@
     {
       "id": "multi_040",
       "query": "关闭香氛，顺便切换按摩档位",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -1502,6 +1542,7 @@
     {
       "id": "multi_041",
       "query": "打开预约充电时间，顺便媒体音量调大百分之20吧",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -1539,6 +1580,7 @@
     {
       "id": "multi_042",
       "query": "HUD亮度调到自动模式，还有冷暖箱离车后持续工作2小时也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -1574,6 +1616,7 @@
     {
       "id": "multi_043",
       "query": "前排座椅坐垫往后调20%，顺便一排的副驾窗户调到1/3",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1614,6 +1657,7 @@
     {
       "id": "multi_044",
       "query": "左前位置窗户给开了，然后后排座垫加热弄高，顺便放下二排左车窗遮阳板呀",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -1665,6 +1709,7 @@
     {
       "id": "multi_045",
       "query": "副驾座垫长度调到30，顺便大灯高度下调1档哦",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1704,6 +1749,7 @@
     {
       "id": "multi_046",
       "query": "开启靠背通风1档，接着减少座椅高度三级",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -1743,6 +1789,7 @@
     {
       "id": "multi_047",
       "query": "打开主驾仪表屏幕自动亮度调节，顺便将后排吸顶屏亮屏呗",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1777,6 +1824,7 @@
     {
       "id": "multi_048",
       "query": "关闭默认节能驾驶模式，顺便车辆模式切换到越野脱困",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1811,6 +1859,7 @@
     {
       "id": "multi_049",
       "query": "前排坐垫通风弄大1档，对了，关闭智能增程模式，还有助手座腿撑角度调高也一起呀",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -1863,6 +1912,7 @@
     {
       "id": "multi_050",
       "query": "调节充电限值到最高倍，顺带把打开防风模式开关也弄了呀",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -1898,6 +1948,7 @@
     {
       "id": "multi_051",
       "query": "打开晕车舒缓开关，接着三排空调调到26度",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -1935,6 +1986,7 @@
     {
       "id": "multi_052",
       "query": "打开小憩模式行吗？然后打开主动预紧安全带",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -1969,6 +2021,7 @@
     {
       "id": "multi_053",
       "query": "内后视镜调到最右，同时关闭后挡风遮阳帘也一起弄好吧",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -2005,6 +2058,7 @@
     {
       "id": "multi_054",
       "query": "关闭电子后视镜自动亮度，然后再把关闭四门车窗迎宾模式弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -2039,6 +2093,7 @@
     {
       "id": "multi_055",
       "query": "关闭疲劳监测，接着打开全车车窗",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -2074,6 +2129,7 @@
     {
       "id": "multi_056",
       "query": "麻烦你座垫高度调到最高，对了，打开靠背通风最高档也弄一下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2112,6 +2168,7 @@
     {
       "id": "multi_057",
       "query": "打开氛围灯月影模式，那个，二排座椅脚托往后调20%吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -2151,6 +2208,7 @@
     {
       "id": "multi_058",
       "query": "能不能帮我二排坐垫加热调高2档，顺便给后排座椅恢复坐姿1",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -2191,6 +2249,7 @@
     {
       "id": "multi_059",
       "query": "先暂停中间车窗，再大灯高度调到23，另外把关闭扫风也弄一下呗",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -2240,6 +2299,7 @@
     {
       "id": "multi_060",
       "query": "能不能帮我前后遮阳帘开到最小，顺便全车座垫加热调低点哈",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -2280,6 +2340,7 @@
     {
       "id": "multi_061",
       "query": "打开座椅靠背加热，接着调高全车空调三度",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -2318,6 +2379,7 @@
     {
       "id": "multi_062",
       "query": "打开主动预紧安全带，对了，关闭显示设置页面也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2352,6 +2414,7 @@
     {
       "id": "multi_063",
       "query": "香氛浓度调到最高档，那个，关闭副驾靠背加热啊",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -2389,6 +2452,7 @@
     {
       "id": "multi_064",
       "query": "将投影画面水平位置往右调节，还有全车座椅高度调到50%也帮我弄下哈",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2426,6 +2490,7 @@
     {
       "id": "multi_065",
       "query": "关闭头枕声音，另外把左侧车窗留条缝也处理下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2462,6 +2527,7 @@
     {
       "id": "multi_066",
       "query": "能不能帮我关闭全车空调，顺便放下前备箱吧",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -2497,6 +2563,7 @@
     {
       "id": "multi_067",
       "query": "位置灯调到一往无前，那个…把天窗调大30也弄下哦",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -2533,6 +2600,7 @@
     {
       "id": "multi_068",
       "query": "先主驾坐垫通风调高一点，再导航音量调到55%，另外把移动中岛前调也弄一下哦",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -2585,6 +2653,7 @@
     {
       "id": "multi_069",
       "query": "打开车外音响，顺带把关掉我的冷暖箱儿童锁也弄了呀",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -2619,6 +2688,7 @@
     {
       "id": "multi_070",
       "query": "调大点左边座椅按摩，然后打开二排右靠背通风",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -2657,6 +2727,7 @@
     {
       "id": "multi_071",
       "query": "关闭驻车自动解锁开关，就是，关掉一排无线充电开关也弄一下哈",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -2692,6 +2763,7 @@
     {
       "id": "multi_072",
       "query": "调整左后位置座椅按摩到3档，顺便关掉主驾无线充电开关吧",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -2730,6 +2802,7 @@
     {
       "id": "multi_073",
       "query": "把右前门车窗降下来，然后再把关闭生命体遗留辅助提醒弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -2765,6 +2838,7 @@
     {
       "id": "multi_074",
       "query": "打开座椅加热，顺便第二排的左侧座椅按摩模式调整至蝶形",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -2801,6 +2875,7 @@
     {
       "id": "multi_075",
       "query": "主驾座椅按摩调整到蛇形，还有尾门调整到50也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2838,6 +2913,7 @@
     {
       "id": "multi_076",
       "query": "开启前排座垫加热，就是，打开车窗也弄一下吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -2874,6 +2950,7 @@
     {
       "id": "multi_077",
       "query": "后视镜向左调节，另外把关一下我的雨刮的间歇的模式也处理下啊",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2908,6 +2985,7 @@
     {
       "id": "multi_078",
       "query": "能不能帮我大灯高度调到低，顺便右前座椅水平后移调小48%哈",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -2947,6 +3025,7 @@
     {
       "id": "multi_079",
       "query": "麻烦主驾椅子靠背角度后移增加一点，对了，预约充电时间也弄一下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -2983,6 +3062,7 @@
     {
       "id": "multi_080",
       "query": "把右前门车窗降下来，然后再把天窗多开一点弄一下哈",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3019,6 +3099,7 @@
     {
       "id": "multi_081",
       "query": "开一下迎宾灯效行吗？然后将后位置灯模式调节页面打开哦",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -3054,6 +3135,7 @@
     {
       "id": "multi_082",
       "query": "坐垫好热，同时关闭二分之一前遮阳帘也一起弄好哈",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -3092,6 +3174,7 @@
     {
       "id": "multi_083",
       "query": "关闭车窗行吗？然后启用制动盘擦拭哦",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -3126,6 +3209,7 @@
     {
       "id": "multi_084",
       "query": "副驾展开行吗？然后关闭强制纯电模式呀",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -3161,6 +3245,7 @@
     {
       "id": "multi_085",
       "query": "二排右座椅靠背前移一点，就是，关闭隐私模式也弄一下啊",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -3198,6 +3283,7 @@
     {
       "id": "multi_086",
       "query": "将位置灯调到步步高升模式，那个，左前椅子坐垫角度往下设为63度哦",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -3238,6 +3324,7 @@
     {
       "id": "multi_087",
       "query": "后视辅助模式关闭，那个，关掉示警音设置页面啊",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -3272,6 +3359,7 @@
     {
       "id": "multi_088",
       "query": "一排的副驾窗户调到1/3行吗？然后给我把右后位置座椅按摩减小3档哦",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -3311,6 +3399,7 @@
     {
       "id": "multi_089",
       "query": "电子后视镜视角调到超广角，顺便开启座椅加热哈",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3346,6 +3435,7 @@
     {
       "id": "multi_090",
       "query": "打开座椅热石理疗，顺便关闭前排无线充电吧",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -3382,6 +3472,7 @@
     {
       "id": "multi_091",
       "query": "方向盘加热调大，还有将舒享座椅往上调25也帮我弄下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -3418,6 +3509,7 @@
     {
       "id": "multi_092",
       "query": "全部座位坐垫后躺，顺便副驾坐垫长度调到最小呀",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3457,6 +3549,7 @@
     {
       "id": "multi_093",
       "query": "打开右后车窗遮阳帘，然后再把退出车窗迎宾模式弄一下哈",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3493,6 +3586,7 @@
     {
       "id": "multi_094",
       "query": "能不能帮我打开座椅加热，顺便主驾座椅通风设大1档",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -3530,6 +3624,7 @@
     {
       "id": "multi_095",
       "query": "驾驶模式切换陡坡缓降，接着打开座椅加热",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -3564,6 +3659,7 @@
     {
       "id": "multi_096",
       "query": "二排右座椅座垫调到最后，顺带把坐垫加热设为最小也弄了",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -3603,6 +3699,7 @@
     {
       "id": "multi_097",
       "query": "关闭换挡提示音设置，那个…打开壁纸也弄下啊",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -3637,6 +3734,7 @@
     {
       "id": "multi_098",
       "query": "先前排靠背加热低2档，再关掉电动门移动音乐啊",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -3675,6 +3773,7 @@
     {
       "id": "multi_099",
       "query": "打开空调制冷，然后再把打开车外灯光迎送宾弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3710,6 +3809,7 @@
     {
       "id": "multi_100",
       "query": "雨刮速度调小23，就是，关闭外后视镜也弄一下吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -3745,6 +3845,7 @@
     {
       "id": "multi_101",
       "query": "全车坐垫加热整高一档，就是，主驾位置座椅按摩调整到2档也弄一下呗",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -3786,6 +3887,7 @@
     {
       "id": "multi_102",
       "query": "关闭吸顶屏亮度自动调节，然后全部车窗升起吧",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -3821,6 +3923,7 @@
     {
       "id": "multi_103",
       "query": "语音交互音量调到最小，对了，二排右坐垫加热调小2档，还有HUD切换到简单模式也一起啊",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -3874,6 +3977,7 @@
     {
       "id": "multi_104",
       "query": "蓝牙钥匙灵敏度调整为常规，顺便打开右车窗",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -3909,6 +4013,7 @@
     {
       "id": "multi_105",
       "query": "开开二排左座垫通风，那个…开开一下我的活物检测也弄下哈",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -3945,6 +4050,7 @@
     {
       "id": "multi_106",
       "query": "先上锁前排面板儿童锁，再窗户关到20%呗",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -3982,6 +4088,7 @@
     {
       "id": "multi_107",
       "query": "先关闭左后车窗，再前后遮阳帘调到三分之一",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -4020,6 +4127,7 @@
     {
       "id": "multi_108",
       "query": "能不能帮我打开三排右阅读灯，顺便二排座椅通风调到最低",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -4057,6 +4165,7 @@
     {
       "id": "multi_109",
       "query": "关闭空调一键速冷开关，然后调低全车空调三度啊",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4095,6 +4204,7 @@
     {
       "id": "multi_110",
       "query": "能不能帮我警告音调高3档，顺便打开车内灯光迎宾啊",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -4132,6 +4242,7 @@
     {
       "id": "multi_111",
       "query": "开启副驾空调AUTO，顺便打开左侧座椅加热呗",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -4169,6 +4280,7 @@
     {
       "id": "multi_112",
       "query": "关闭前排座椅通风…嗯…还有关闭驻车自动解锁呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -4204,6 +4316,7 @@
     {
       "id": "multi_113",
       "query": "阅读灯亮度调到最小值，同时激活照明光毯也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4239,6 +4352,7 @@
     {
       "id": "multi_114",
       "query": "二排右座椅坐垫往前调20%，同时星空顶亮度调高一点也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4278,6 +4392,7 @@
     {
       "id": "multi_115",
       "query": "先灵感星辉天幕调自动，再第1排车窗开合度关到最小",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -4315,6 +4430,7 @@
     {
       "id": "multi_116",
       "query": "全车座椅按摩切换到热石理疗模式，那个…导航音量调到最小也弄下哦",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -4353,6 +4469,7 @@
     {
       "id": "multi_117",
       "query": "打开电子后视镜高速视野放大，同时将右后车窗高度开大点也一起弄好呗",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4389,6 +4506,7 @@
     {
       "id": "multi_118",
       "query": "打开星辉天幕，顺便关闭一键调平模式吧",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -4423,6 +4541,7 @@
     {
       "id": "multi_119",
       "query": "窗户调节为10%，同时冷暖箱温度调小也一起弄好呀",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4459,6 +4578,7 @@
     {
       "id": "multi_120",
       "query": "窗户关到1/3，另外把打开空调通风模式也处理下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4495,6 +4615,7 @@
     {
       "id": "multi_121",
       "query": "打开车外音响，还有坐垫有点冰了也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4530,6 +4651,7 @@
     {
       "id": "multi_122",
       "query": "雨刮灵敏度调到较低行吗？然后靠背加热大2档哈",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -4568,6 +4690,7 @@
     {
       "id": "multi_123",
       "query": "前排座椅按摩调至臀部，另外把关闭香氛也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4604,6 +4727,7 @@
     {
       "id": "multi_124",
       "query": "冰箱下车延时工作设置为不限时模式，还有取消空气悬架迎宾模式也帮我弄下啊",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4639,6 +4763,7 @@
     {
       "id": "multi_125",
       "query": "打开左后车窗遮阳帘，对了，取消行车自动落锁，还有关闭礼让行人也一起哈",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -4687,6 +4812,7 @@
     {
       "id": "multi_126",
       "query": "副驾座椅按摩调小一点，那个，空调出风口调左",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -4724,6 +4850,7 @@
     {
       "id": "multi_127",
       "query": "副驾脚托往上二档，还有打开势如破竹后位置灯也帮我弄下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4764,6 +4891,7 @@
     {
       "id": "multi_128",
       "query": "给我调节尾门到最大，对了，打开HUD，还有方向盘加热调到2档也一起",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -4813,6 +4941,7 @@
     {
       "id": "multi_129",
       "query": "二排车窗调低1/3，然后调大后备箱开合度啊",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -4849,6 +4978,7 @@
     {
       "id": "multi_130",
       "query": "关闭转向灯自动关闭，还有车窗开到最大也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4884,6 +5014,7 @@
     {
       "id": "multi_131",
       "query": "中岛设置备用位置1，然后再把主驾靠背加热设大1档弄一下啊",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -4923,6 +5054,7 @@
     {
       "id": "multi_132",
       "query": "能不能帮我三排右座椅按摩调低1档，顺便前排座椅坐垫往后调20%吧",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -4964,6 +5096,7 @@
     {
       "id": "multi_133",
       "query": "关闭降速缓行车辆模式，另外把打开相机录像也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -4998,6 +5131,7 @@
     {
       "id": "multi_134",
       "query": "打开主驾座椅安全模式，另外把将车窗调至2/3也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -5034,6 +5168,7 @@
     {
       "id": "multi_135",
       "query": "关闭大灯延时关闭开关，还有二排左座椅按摩切到腰部也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -5070,6 +5205,7 @@
     {
       "id": "multi_136",
       "query": "前排座椅加热设高一点，那个…星空顶模式切换到吉星高照也弄下呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -5107,6 +5243,7 @@
     {
       "id": "multi_137",
       "query": "关闭保电优先，同时取消一下我的氛围灯的驾驶联动模式也一起弄好哈",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -5142,6 +5279,7 @@
     {
       "id": "multi_138",
       "query": "HUD高度设置成50%，那个…我要设置右边座椅按摩成最低档也弄下",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -5180,6 +5318,7 @@
     {
       "id": "multi_139",
       "query": "将尾门开合度调节至最大，顺带把窗户开到20%也弄了呗",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -5217,6 +5356,7 @@
     {
       "id": "multi_140",
       "query": "关上HUD转向补盲显示，就是，打开空调强效杀菌模式也弄一下",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -5253,6 +5393,7 @@
     {
       "id": "multi_141",
       "query": "中控调到最亮，接着关闭强制发电哦",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -5288,6 +5429,7 @@
     {
       "id": "multi_142",
       "query": "车窗全部关一小半，对了，打开全车靠背加热，还有座椅按摩模式设置蝶形也一起",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -5340,6 +5482,7 @@
     {
       "id": "multi_143",
       "query": "能不能帮我二排座椅坐垫往下调20%，顺便把我的会议模式打开啊",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -5378,6 +5521,7 @@
     {
       "id": "multi_144",
       "query": "调整左后位置座椅按摩到3档，然后再把主驾中控屏亮度调高20弄一下呗",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -5416,6 +5560,7 @@
     {
       "id": "multi_145",
       "query": "来电提示音切换到最低，顺便开开前排靠背通风吧",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -5454,6 +5599,7 @@
     {
       "id": "multi_146",
       "query": "打开左侧座椅通风，同时副驾车窗打开3/4也一起弄好啊",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -5491,6 +5637,7 @@
     {
       "id": "multi_147",
       "query": "前两排窗户暂停下降，然后右前座椅靠背角度往前调至百分之十七呀",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -5531,6 +5678,7 @@
     {
       "id": "multi_148",
       "query": "空调开始上下左右扫风，顺便三排右座椅按摩切到腰部啊",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -5568,6 +5716,7 @@
     {
       "id": "multi_149",
       "query": "关闭二排右车窗，那个…副驾座椅脚托角度调到50%也弄下",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -5607,6 +5756,7 @@
     {
       "id": "multi_150",
       "query": "左侧座椅加热调低点，接着关闭两侧车窗面板儿童锁呀",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -5645,6 +5795,7 @@
     {
       "id": "multi_151",
       "query": "先左后座位座垫角度向下调到8度，再音量随速调低三分之一，另外把主驾中控屏幕亮度调亮1/3也弄一下",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -5698,6 +5849,7 @@
     {
       "id": "multi_152",
       "query": "打开二排座椅按摩，然后开启车外灯光迎送宾守护模式",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -5734,6 +5886,7 @@
     {
       "id": "multi_153",
       "query": "打开警告音设置页面，然后再把主驾靠背加热调小点弄一下呗",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -5771,6 +5924,7 @@
     {
       "id": "multi_154",
       "query": "前排座椅加热弄大1档，然后关闭领航头枕模式啊",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -5809,6 +5963,7 @@
     {
       "id": "multi_155",
       "query": "座椅水平移动设置行吗？然后打开制动盘擦拭开关",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -5843,6 +5998,7 @@
     {
       "id": "multi_156",
       "query": "悬架软硬度调硬…嗯…还有关闭全车座垫通风呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -5879,6 +6035,7 @@
     {
       "id": "multi_157",
       "query": "关闭小憩模式，顺便关闭左侧座椅加热哈",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -5914,6 +6071,7 @@
     {
       "id": "multi_158",
       "query": "展开右侧零重力座椅，对了，坐垫加热数值调到最大，还有副驾靠背通风调高点也一起啊",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -5967,6 +6125,7 @@
     {
       "id": "multi_159",
       "query": "给我把天窗打开到四分之一，另外把头枕向后调点也处理下啊",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -6004,6 +6163,7 @@
     {
       "id": "multi_160",
       "query": "打开车内关怀模式，对了，前排座垫加热最大，还有一排车窗降到20%也一起",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -6056,6 +6216,7 @@
     {
       "id": "multi_161",
       "query": "调高三排空调三度，那个，座椅座垫长度调大一点哈",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -6095,6 +6256,7 @@
     {
       "id": "multi_162",
       "query": "设置来电提示音量，接着打开冷暖箱持续工作吧",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -6130,6 +6292,7 @@
     {
       "id": "multi_163",
       "query": "打开二排右靠背通风，还有上锁左车窗儿童锁也帮我弄下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -6167,6 +6330,7 @@
     {
       "id": "multi_164",
       "query": "燃油补电调到最高档，就是，星空顶模式关闭璀璨星河也弄一下哦",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -6203,6 +6367,7 @@
     {
       "id": "multi_165",
       "query": "副驾座椅往后调20%，然后关闭4门车窗迎宾，顺便弯道辅助控制切换为稳健",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -6253,6 +6418,7 @@
     {
       "id": "multi_166",
       "query": "切换为音乐节音效，顺带把车窗开到70%也弄了呗",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -6290,6 +6456,7 @@
     {
       "id": "multi_167",
       "query": "打开千斤顶模式，顺便二排座椅调到最上吧",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -6326,6 +6493,7 @@
     {
       "id": "multi_168",
       "query": "开大第一排的车窗，同时打开二排左零重力座椅也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -6363,6 +6531,7 @@
     {
       "id": "multi_169",
       "query": "先座椅位置复原默认，再打开第二排的窗，另外把关闭远端屏卡片设置页面也弄一下",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -6408,6 +6577,7 @@
     {
       "id": "multi_170",
       "query": "先不要主驾座椅安全模式，再二排左座椅座垫长度调到50%，另外把全车座椅脚托角度往上调20%也弄一下吧",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -6463,6 +6633,7 @@
     {
       "id": "multi_171",
       "query": "右前椅子靠背角度向后移为3档，还有开打开一下我的氛围灯的驾驶联动模式也帮我弄下哦",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -6503,6 +6674,7 @@
     {
       "id": "multi_172",
       "query": "关闭座椅坐垫通风，就是，二排座椅靠背前移一点也弄一下吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -6541,6 +6713,7 @@
     {
       "id": "multi_173",
       "query": "打开一下嗨歌模式，同时远端屏亮度调至1/3也一起弄好",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -6576,6 +6749,7 @@
     {
       "id": "multi_174",
       "query": "先打开氛围灯极光星环，再关闭保电模式哦",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -6611,6 +6785,7 @@
     {
       "id": "multi_175",
       "query": "主驾座椅调到最下，接着4门车窗留个缝呀",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -6649,6 +6824,7 @@
     {
       "id": "multi_176",
       "query": "全部车窗不要动了，顺便关闭座椅通风功能",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -6684,6 +6860,7 @@
     {
       "id": "multi_177",
       "query": "副驾车窗降低三分之一，接着远端屏亮度调高10吧",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -6721,6 +6898,7 @@
     {
       "id": "multi_178",
       "query": "能不能帮我香氛改为熠熠星海，顺便迎宾灯效调到鹏息迎辉模式哈",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -6757,6 +6935,7 @@
     {
       "id": "multi_179",
       "query": "二排右座椅脚托角度往上调20%，顺便打开全车通风同步",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -6796,6 +6975,7 @@
     {
       "id": "multi_180",
       "query": "完全升起4门车窗，然后再把前排座椅往下调20%弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -6834,6 +7014,7 @@
     {
       "id": "multi_181",
       "query": "音乐音量调小五分之一，那个…后备箱关到30%也弄下哈",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -6872,6 +7053,7 @@
     {
       "id": "multi_182",
       "query": "上锁左车窗面板儿童锁，就是，音效切换到纯臻人声也弄一下吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -6909,6 +7091,7 @@
     {
       "id": "multi_183",
       "query": "把灵感星辉天幕模式切换到自动模式，对了，关上hud转向补盲显示也弄一下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -6945,6 +7128,7 @@
     {
       "id": "multi_184",
       "query": "中控屏亮度调到一半，顺便右前座位靠背角度往后设为17%吧",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -6986,6 +7170,7 @@
     {
       "id": "multi_185",
       "query": "暂停遮阳帘…嗯…还有香氛浓度调节到淡雅",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -7022,6 +7207,7 @@
     {
       "id": "multi_186",
       "query": "关闭方向盘加热，顺带把二排左座椅坐垫高度调到50%也弄了呀",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -7060,6 +7246,7 @@
     {
       "id": "multi_187",
       "query": "打开光感天幕锁车自动调暗车辆模式，就是，车外灯光迎宾切换序章模式也弄一下",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -7095,6 +7282,7 @@
     {
       "id": "multi_188",
       "query": "先全车座椅脚托往后调20%，再仪表亮度调到最大",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -7134,6 +7322,7 @@
     {
       "id": "multi_189",
       "query": "先打开后位置灯调节页面，再前遮阳帘开大点，另外把打开空调自干燥也弄一下呀",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -7185,6 +7374,7 @@
     {
       "id": "multi_190",
       "query": "低速提示音切换到梦幻，然后右侧座垫通风调高点呗",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -7222,6 +7412,7 @@
     {
       "id": "multi_191",
       "query": "进入一下驻车自动解锁模式，对了，关闭左侧坐垫加热，还有打开氛围灯跟随驾驶模式也一起哦",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -7271,6 +7462,7 @@
     {
       "id": "multi_192",
       "query": "把音效换为醇享经典，那个，打开座垫通风2档呀",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -7309,6 +7501,7 @@
     {
       "id": "multi_193",
       "query": "音效切换到奢享剧院…嗯…还有关闭二排阅读灯呗",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -7345,6 +7538,7 @@
     {
       "id": "multi_194",
       "query": "开开一下我的电池保温开关，那个…二排座椅脚托长度调到50%也弄下呗",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -7383,6 +7577,7 @@
     {
       "id": "multi_195",
       "query": "关闭杯托加热，同时二排左座椅脚托角度往下调20%也一起弄好哦",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -7422,6 +7617,7 @@
     {
       "id": "multi_196",
       "query": "先调低仪表亮度，再大灯高度调到适中吧",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -7457,6 +7653,7 @@
     {
       "id": "multi_197",
       "query": "帮我三排左座椅按摩调小点，对了，位置灯调到锦绣前程模式也弄一下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -7494,6 +7691,7 @@
     {
       "id": "multi_198",
       "query": "关闭露营模式，顺便关闭APA模式哦",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -7528,6 +7726,7 @@
     {
       "id": "multi_199",
       "query": "打开两侧车窗，接着右前座椅水平后移调小百分之四十八",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -7567,6 +7766,7 @@
     {
       "id": "multi_200",
       "query": "开开预约充电时间，然后前后遮阳帘调成50%，顺便不要随车速上锁呀",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -7617,6 +7817,7 @@
     {
       "id": "multi_201",
       "query": "四门车窗打开三分之一，那个…开开腰部热石按摩也弄下吧",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -7654,6 +7855,7 @@
     {
       "id": "multi_202",
       "query": "HUD高度数值调到最小，顺便关上隐私玻璃自动调光",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -7689,6 +7891,7 @@
     {
       "id": "multi_203",
       "query": "关一下相册自动轮播设置页面，就是，遮阳帘开合度调小一点也弄一下吧",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -7725,6 +7928,7 @@
     {
       "id": "multi_204",
       "query": "打开氛围灯静态模式，对了，将舒享座椅腰托设置到最下，还有打开我的冷暖箱持续工作模式也一起哦",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -7776,6 +7980,7 @@
     {
       "id": "multi_205",
       "query": "把主驾车窗都开开，另外把打开来电提示音设置也处理下哈",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -7811,6 +8016,7 @@
     {
       "id": "multi_206",
       "query": "开开电子驻车，还有设置为四门车门解锁也帮我弄下哦",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -7846,6 +8052,7 @@
     {
       "id": "multi_207",
       "query": "启用随车速上锁，然后再把启用行人礼让灯语弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -7880,6 +8087,7 @@
     {
       "id": "multi_208",
       "query": "电子后视镜向左调节，那个…把前排座椅按摩降低二档也弄下哦",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -7917,6 +8125,7 @@
     {
       "id": "multi_209",
       "query": "帮我前排椅子靠背角度向前调大一点，对了，零重力座椅儿童锁解锁也弄一下呀",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -7956,6 +8165,7 @@
     {
       "id": "multi_210",
       "query": "调整为主驾车门解锁，还有远端屏亮度切换为20%也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -7993,6 +8203,7 @@
     {
       "id": "multi_211",
       "query": "二排左座椅调到最下，那个…车窗开小20%也弄下呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8031,6 +8242,7 @@
     {
       "id": "multi_212",
       "query": "关闭前右无线充电，对了，右侧座椅通风调低1档也弄一下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -8069,6 +8281,7 @@
     {
       "id": "multi_213",
       "query": "副驾座椅按摩调大1档…嗯…还有关闭全车窗吧",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8107,6 +8320,7 @@
     {
       "id": "multi_214",
       "query": "低速提示音切换到微风…嗯…还有打开二排左座椅加热呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8142,6 +8356,7 @@
     {
       "id": "multi_215",
       "query": "先我的大灯高度调高1档，再音乐音量调到20",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -8180,6 +8395,7 @@
     {
       "id": "multi_216",
       "query": "先副驾座椅座垫往下调20%，再一排的副驾窗户调到1/3，另外把椅子坐垫角度下移设到最前也弄一下",
+      "position": "主驾",
       "tone": "三意图",
       "intent_count": 3,
       "gt_api": [
@@ -8235,6 +8451,7 @@
     {
       "id": "multi_217",
       "query": "关闭转向补盲HUD，那个…后排车窗帮我关闭一大半也弄下",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8273,6 +8490,7 @@
     {
       "id": "multi_218",
       "query": "能不能帮我副驾座椅靠背角度前移一点，顺便开一下相册自动轮播开关呀",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -8310,6 +8528,7 @@
     {
       "id": "multi_219",
       "query": "调小全部遮阳帘30%，顺带把天窗调小30也弄了",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -8349,6 +8568,7 @@
     {
       "id": "multi_220",
       "query": "全部遮阳帘开到最大，就是，右侧座椅通风调高点也弄一下啊",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -8388,6 +8608,7 @@
     {
       "id": "multi_221",
       "query": "打开我的冷暖箱的冷藏模式，顺带把主驾车窗再关闭三分之一也弄了呗",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -8425,6 +8646,7 @@
     {
       "id": "multi_222",
       "query": "打开钥匙感应开启后备箱，另外把二排左座垫加热调大点也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -8462,6 +8684,7 @@
     {
       "id": "multi_223",
       "query": "关掉二排靠背通风，还有二排座椅加热调大点也帮我弄下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -8500,6 +8723,7 @@
     {
       "id": "multi_224",
       "query": "打开湿滑模式，顺带把全车座椅坐垫调到最高也弄了呀",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -8537,6 +8761,7 @@
     {
       "id": "multi_225",
       "query": "全车座垫通风调到最高…嗯…还有副驾座椅头枕调到最高哈",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8577,6 +8802,7 @@
     {
       "id": "multi_226",
       "query": "切换为录音棚K歌音效，顺便打开行车自动落锁开关",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -8612,6 +8838,7 @@
     {
       "id": "multi_227",
       "query": "主驾座椅通风调大点，然后再把开一下来电提示音设置页面弄一下啊",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -8648,6 +8875,7 @@
     {
       "id": "multi_228",
       "query": "HUD高度数值调到最大，就是，上锁冷暖箱儿童锁也弄一下呗",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -8683,6 +8911,7 @@
     {
       "id": "multi_229",
       "query": "关闭三排空调AUTO，然后再把打开主驾座垫加热弄一下呗",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -8721,6 +8950,7 @@
     {
       "id": "multi_230",
       "query": "打开冷暖箱儿童锁，顺便前排调整车窗到一半哈",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -8758,6 +8988,7 @@
     {
       "id": "multi_231",
       "query": "打开内后视镜自动防眩目，顺便关闭手套箱吧",
+      "position": "主驾",
       "tone": "顺带",
       "intent_count": 2,
       "gt_api": [
@@ -8792,6 +9023,7 @@
     {
       "id": "multi_232",
       "query": "全车座椅坐垫调到最后，那个，香氛浓度调节到清新呗",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -8830,6 +9062,7 @@
     {
       "id": "multi_233",
       "query": "二排座椅靠背后移一点…嗯…还有我的座椅通风调低1档",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -8870,6 +9103,7 @@
     {
       "id": "multi_234",
       "query": "全部座位靠背角度前移10度行吗？然后后备箱高度升高1/3",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -8909,6 +9143,7 @@
     {
       "id": "multi_235",
       "query": "把前排车门电动模式切换到OFF，另外把悬架软硬度调硬也处理下吧",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -8944,6 +9179,7 @@
     {
       "id": "multi_236",
       "query": "关掉示警音，接着打开氛围灯常亮模式",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -8979,6 +9215,7 @@
     {
       "id": "multi_237",
       "query": "二排座椅靠背前移一点，顺便座垫加热最大",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -9018,6 +9255,7 @@
     {
       "id": "multi_238",
       "query": "关闭方向盘调节页面，接着关闭三排座椅按摩哦",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -9053,6 +9291,7 @@
     {
       "id": "multi_239",
       "query": "关闭低速提示音设置界面…嗯…还有右前座椅水平后移调小48%呀",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -9091,6 +9330,7 @@
     {
       "id": "multi_240",
       "query": "关闭二排右坐垫加热，那个…座椅靠背通风调到最大也弄下",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -9129,6 +9369,7 @@
     {
       "id": "multi_241",
       "query": "HUD高度加大二档，那个…光感天幕透光度调到30也弄下",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -9166,6 +9407,7 @@
     {
       "id": "multi_242",
       "query": "先吸顶屏亮度调到75%，再头枕音效模式切换私享哦",
+      "position": "主驾",
       "tone": "先后",
       "intent_count": 2,
       "gt_api": [
@@ -9203,6 +9445,7 @@
     {
       "id": "multi_243",
       "query": "关上车外灯光迎送宾，同时给后排座椅坐姿重置第三个位置也一起弄好啊",
+      "position": "主驾",
       "tone": "并列",
       "intent_count": 2,
       "gt_api": [
@@ -9239,6 +9482,7 @@
     {
       "id": "multi_244",
       "query": "语音交互音量调到最小行吗？然后关闭氛围灯静态模式哦",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
@@ -9276,6 +9520,7 @@
     {
       "id": "multi_245",
       "query": "关闭空调驻车通风模式…嗯…还有关闭主驾座椅通风同步",
+      "position": "主驾",
       "tone": "犹豫",
       "intent_count": 2,
       "gt_api": [
@@ -9312,6 +9557,7 @@
     {
       "id": "multi_246",
       "query": "主驾位置座椅按摩模式调成猫步，然后再把车窗面板儿童锁关闭弄一下",
+      "position": "主驾",
       "tone": "顺序颠倒",
       "intent_count": 2,
       "gt_api": [
@@ -9349,6 +9595,7 @@
     {
       "id": "multi_247",
       "query": "把我这边位置座椅通风提高二档，另外把打开一下我的氛围灯的驾驶模式联动模式也处理下呗",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -9387,6 +9634,7 @@
     {
       "id": "multi_248",
       "query": "座椅位置复原记忆，另外把来电提示音调到20%也处理下",
+      "position": "主驾",
       "tone": "追加补充",
       "intent_count": 2,
       "gt_api": [
@@ -9424,6 +9672,7 @@
     {
       "id": "multi_249",
       "query": "关闭后遮阳帘，就是，车辆模式关闭陡坡缓降也弄一下呗",
+      "position": "主驾",
       "tone": "填充词",
       "intent_count": 2,
       "gt_api": [
@@ -9460,6 +9709,7 @@
     {
       "id": "multi_250",
       "query": "油门灵敏度调整到最低行吗？然后调大后备箱开合度呀",
+      "position": "主驾",
       "tone": "试探",
       "intent_count": 2,
       "gt_api": [
