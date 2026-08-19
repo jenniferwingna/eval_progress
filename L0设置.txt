@@ -1,0 +1,4178 @@
+[
+    {
+        "query": "关闭远端屏卡片开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下远端屏卡片开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关掉远端屏卡片开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置远端屏卡片",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭相册自动轮播开关",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下相册自动轮播开关",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "设置相册自动轮播",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭远端屏小地图开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下远端屏小地图开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关掉远端屏小地图开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置远端屏小地图",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开静音",
+        "wakeup_position": "主驾",
+        "api_name": "volume_mute",
+        "parameters": {}
+    },
+    {
+        "query": "设置智慧聆听",
+        "wakeup_position": "主驾",
+        "api_name": "smart_listen_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开智慧聆听",
+        "wakeup_position": "主驾",
+        "api_name": "smart_listen_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭智慧聆听",
+        "wakeup_position": "主驾",
+        "api_name": "smart_listen_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开左后车窗",
+        "wakeup_position": "主驾",
+        "api_name": "window_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "position": {
+                "type": "str",
+                "value": "backLeft"
+            }
+        }
+    },
+    {
+        "query": "打开驾驶页面",
+        "wakeup_position": "主驾",
+        "api_name": "drive_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开车辆控制页面",
+        "wakeup_position": "主驾",
+        "api_name": "car_control_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开灯光页面",
+        "wakeup_position": "主驾",
+        "api_name": "light_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开华为分享开关",
+        "wakeup_position": "主驾",
+        "api_name": "huawei_share_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭华为分享开关",
+        "wakeup_position": "主驾",
+        "api_name": "huawei_share_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置时区",
+        "wakeup_position": "主驾",
+        "api_name": "time_zone",
+        "parameters": {}
+    },
+    {
+        "query": "设置蓝牙",
+        "wakeup_position": "主驾",
+        "api_name": "bluetooth_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭车辆控制页面",
+        "wakeup_position": "主驾",
+        "api_name": "car_control_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭系统设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "system_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "low"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到高",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "high"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到最低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到最高",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到最大",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到最小",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "警报音量调整到低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "low"
+            }
+        }
+    },
+    {
+        "query": "警报音量切换到高",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "high"
+            }
+        }
+    },
+    {
+        "query": "警报音量调到最低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "报警音调整到最高",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "报警音切换到最大",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "报警音调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "警告音设置至20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警告音设置至3档",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "3"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "level"
+            }
+        }
+    },
+    {
+        "query": "警告音设置至10",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "10"
+            }
+        }
+    },
+    {
+        "query": "警示音量设置至20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警示音量调整至3档",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "3"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "level"
+            }
+        }
+    },
+    {
+        "query": "警示音量调至10",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "10"
+            }
+        }
+    },
+    {
+        "query": "警告音调整至10",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "10"
+            }
+        }
+    },
+    {
+        "query": "警告音切换至20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警告音调至20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警告音调低一点",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "警告音调低20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警告音调低3档",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "3"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "level"
+            }
+        }
+    },
+    {
+        "query": "警告音调低25",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "25"
+            }
+        }
+    },
+    {
+        "query": "警告音调高一点",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "警告音调高20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "警告音调高10",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "10"
+            }
+        }
+    },
+    {
+        "query": "打开导航压低媒体音开关",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭导航压低媒体音开关",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置导航压低媒体音开关",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "调整导航压低媒体音开关",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置开门降音",
+        "wakeup_position": "主驾",
+        "api_name": "lower_vol_when_door_open_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "屏幕切换到浅色模式",
+        "wakeup_position": "主驾",
+        "api_name": "screen_display_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "浅色"
+            }
+        }
+    },
+    {
+        "query": "屏幕切换到深色模式",
+        "wakeup_position": "主驾",
+        "api_name": "screen_display_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "深色"
+            }
+        }
+    },
+    {
+        "query": "屏幕切换到自适应模式",
+        "wakeup_position": "主驾",
+        "api_name": "screen_display_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "自动"
+            }
+        }
+    },
+    {
+        "query": "音效切换为经典",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "经典"
+            }
+        }
+    },
+    {
+        "query": "设置自定义唤醒词",
+        "wakeup_position": "主驾",
+        "api_name": "customized_wakeup_for_voice_assistant",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "音效切换为流行",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "流行"
+            }
+        }
+    },
+    {
+        "query": "设置自定义应答语",
+        "wakeup_position": "主驾",
+        "api_name": "customized_response_for_voice_assistant",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "音效切换为人声",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "纯臻人声"
+            }
+        }
+    },
+    {
+        "query": "音效切换为柔和",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "柔和"
+            }
+        }
+    },
+    {
+        "query": "音效切换为爵士",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "爵士"
+            }
+        }
+    },
+    {
+        "query": "音效切换为摇滚",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "摇滚"
+            }
+        }
+    },
+    {
+        "query": "音效切换为传统",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "传统"
+            }
+        }
+    },
+    {
+        "query": "音效切换为默认",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "默认"
+            }
+        }
+    },
+    {
+        "query": "音效切换为自定义",
+        "wakeup_position": "主驾",
+        "api_name": "sound_effect_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "自定义"
+            }
+        }
+    },
+    {
+        "query": "音效随机切换",
+        "wakeup_position": "主驾",
+        "api_name": "random_sound_effect",
+        "parameters": {}
+    },
+    {
+        "query": "下一音效",
+        "wakeup_position": "主驾",
+        "api_name": "next_sound_effect",
+        "parameters": {}
+    },
+    {
+        "query": "上一音效",
+        "wakeup_position": "主驾",
+        "api_name": "previous_sound_effect",
+        "parameters": {}
+    },
+    {
+        "query": "打开头枕声音",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭头枕声音",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "头枕音效模式切换专注",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "专注"
+            }
+        }
+    },
+    {
+        "query": "语音交互音量调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "语音交互"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "头枕音效模式切换私享",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "私享"
+            }
+        }
+    },
+    {
+        "query": "语音交互音量调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "语音交互"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "调高语音交互音量",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "语音交互"
+            }
+        }
+    },
+    {
+        "query": "头枕音效模式随机切换",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "随机"
+            }
+        }
+    },
+    {
+        "query": "调低语音交互音量",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "语音交互"
+            }
+        }
+    },
+    {
+        "query": "打开环绕音",
+        "wakeup_position": "主驾",
+        "api_name": "surround_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭环绕音",
+        "wakeup_position": "主驾",
+        "api_name": "surround_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "语音交互音量调到75%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "语音交互"
+            },
+            "value": {
+                "type": "number",
+                "value": "75"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "设置环绕音到柔和模式",
+        "wakeup_position": "主驾",
+        "api_name": "surround_sound_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "柔和"
+            }
+        }
+    },
+    {
+        "query": "设置壁纸",
+        "wakeup_position": "主驾",
+        "api_name": "wallpaper_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开壁纸",
+        "wakeup_position": "主驾",
+        "api_name": "wallpaper_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开声浪模拟",
+        "wakeup_position": "主驾",
+        "api_name": "engine_effect_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭声浪模拟",
+        "wakeup_position": "主驾",
+        "api_name": "engine_effect_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "声场调节调到智能",
+        "wakeup_position": "主驾",
+        "api_name": "sound_field_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "智能"
+            }
+        }
+    },
+    {
+        "query": "声场调节调到手动",
+        "wakeup_position": "主驾",
+        "api_name": "sound_field_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "手动"
+            }
+        }
+    },
+    {
+        "query": "打开唤醒开关",
+        "wakeup_position": "主驾",
+        "api_name": "wake_up_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭唤醒开关",
+        "wakeup_position": "主驾",
+        "api_name": "wake_up_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开唤醒开关设置",
+        "wakeup_position": "主驾",
+        "api_name": "wake_up_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开疲劳监测",
+        "wakeup_position": "主驾",
+        "api_name": "fatigue_monitoring_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭疲劳监测",
+        "wakeup_position": "主驾",
+        "api_name": "fatigue_monitoring_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开分神监测",
+        "wakeup_position": "主驾",
+        "api_name": "distraction_monitoring_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭分神监测",
+        "wakeup_position": "主驾",
+        "api_name": "distraction_monitoring_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭WLAN",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开触碰音",
+        "wakeup_position": "主驾",
+        "api_name": "touch_notice",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭触碰音",
+        "wakeup_position": "主驾",
+        "api_name": "touch_notice",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置音区",
+        "wakeup_position": "主驾",
+        "api_name": "voice_zone_setting",
+        "parameters": {}
+    },
+    {
+        "query": "打开音区设置",
+        "wakeup_position": "主驾",
+        "api_name": "voice_zone_setting",
+        "parameters": {}
+    },
+    {
+        "query": "打开蓝牙设置",
+        "wakeup_position": "主驾",
+        "api_name": "bluetooth_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开连接设置",
+        "wakeup_position": "主驾",
+        "api_name": "connect_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开显示设置",
+        "wakeup_position": "主驾",
+        "api_name": "display_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开声音设置",
+        "wakeup_position": "主驾",
+        "api_name": "sound_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "查看语言",
+        "wakeup_position": "主驾",
+        "api_name": "check_system_language",
+        "parameters": {}
+    },
+    {
+        "query": "设置里程单位",
+        "wakeup_position": "主驾",
+        "api_name": "car_range_display_unit",
+        "parameters": {}
+    },
+    {
+        "query": "里程单位切换为英里",
+        "wakeup_position": "主驾",
+        "api_name": "car_range_display_unit",
+        "parameters": {
+            "rangeUnit": {
+                "type": "str",
+                "value": "英里"
+            }
+        }
+    },
+    {
+        "query": "设置时间格式",
+        "wakeup_position": "主驾",
+        "api_name": "time_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "里程单位切换为公里",
+        "wakeup_position": "主驾",
+        "api_name": "car_range_display_unit",
+        "parameters": {
+            "rangeUnit": {
+                "type": "str",
+                "value": "公里"
+            }
+        }
+    },
+    {
+        "query": "语言切换为中文",
+        "wakeup_position": "主驾",
+        "api_name": "change_system_language",
+        "parameters": {
+            "languageName": {
+                "type": "str",
+                "value": "中文"
+            }
+        }
+    },
+    {
+        "query": "语言切换为英文",
+        "wakeup_position": "主驾",
+        "api_name": "change_system_language",
+        "parameters": {
+            "languageName": {
+                "type": "str",
+                "value": "英文"
+            }
+        }
+    },
+    {
+        "query": "设置屏幕保护",
+        "wakeup_position": "主驾",
+        "api_name": "screen_saver_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开手势识别",
+        "wakeup_position": "主驾",
+        "api_name": "gesture_recognition_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭手势识别",
+        "wakeup_position": "主驾",
+        "api_name": "gesture_recognition_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "调高仪表亮度",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            }
+        }
+    },
+    {
+        "query": "调低仪表亮度",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            }
+        }
+    },
+    {
+        "query": "仪表亮度调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "仪表亮度调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "仪表亮度调到75%",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "75"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "检查蓝牙状态",
+        "wakeup_position": "主驾",
+        "api_name": "check_bluetooth",
+        "parameters": {}
+    },
+    {
+        "query": "打开仪表屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭仪表屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "dashboard_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开蓝牙",
+        "wakeup_position": "主驾",
+        "api_name": "bluetooth_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭蓝牙",
+        "wakeup_position": "主驾",
+        "api_name": "bluetooth_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "充电限值调小一点",
+        "wakeup_position": "主驾",
+        "api_name": "charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "反向供电限值调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "reverse_charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "反向供电限值调大一点",
+        "wakeup_position": "主驾",
+        "api_name": "reverse_charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "反向供电限值调小一点",
+        "wakeup_position": "主驾",
+        "api_name": "reverse_charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "电流限值调到最高",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_set",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "电流限值调高一点",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_set",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "吸顶屏亮度调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "电流限值调低一点",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_set",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "吸顶屏亮度调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "充电限值设置为80%",
+        "wakeup_position": "主驾",
+        "api_name": "charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "80"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "关闭吸顶屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开吸顶屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "副驾屏亮度调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "passenger_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "调高吸顶屏亮度",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            }
+        }
+    },
+    {
+        "query": "副驾屏亮度调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "passenger_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "调低吸顶屏亮度",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            }
+        }
+    },
+{
+        "query": "吸顶屏亮度调到75%",
+        "wakeup_position": "主驾",
+        "api_name": "top_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "75"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "关闭显示设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "display_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭音量设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "sound_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭能量设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "energy_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭驾驶设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "drive_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭灯光设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "light_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭声音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "sound_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭连接设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "connect_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "开启充电",
+        "wakeup_position": "主驾",
+        "api_name": "charging_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭充电",
+        "wakeup_position": "主驾",
+        "api_name": "charging_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "充电限值调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "充电限值调大一点",
+        "wakeup_position": "主驾",
+        "api_name": "charging_gear",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "副驾屏亮度调高点",
+        "wakeup_position": "主驾",
+        "api_name": "passenger_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "副驾屏亮度调低点",
+        "wakeup_position": "主驾",
+        "api_name": "passenger_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "打开无线充电",
+        "wakeup_position": "主驾",
+        "api_name": "wireless_charging_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭无线充电",
+        "wakeup_position": "主驾",
+        "api_name": "wireless_charging_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开热点",
+        "wakeup_position": "主驾",
+        "api_name": "hotspot_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭热点",
+        "wakeup_position": "主驾",
+        "api_name": "hotspot_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置热点",
+        "wakeup_position": "主驾",
+        "api_name": "hotspot_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调高一点",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调低一点",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调大",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调小",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            }
+        }
+    },
+    {
+        "query": "中控屏亮度调到一半",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "50"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到一半",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "50"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "调高中控屏亮度",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            }
+        }
+    },
+    {
+        "query": "调低中控屏亮度",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到最高",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "打开中控屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到最低",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "关闭中控屏亮度自动调节",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_auto_luminance",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "中控屏亮度调到最大",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "中控屏亮度调到最小",
+        "wakeup_position": "主驾",
+        "api_name": "central_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "设置换挡告警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置换挡警示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开来电提示音",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "设置换挡报警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭来电提醒音量",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "切换换挡提示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "开开来电提示声音",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "切换换挡提醒音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关上来电提示音音量",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "切换换挡告警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "切换换挡警示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "切换换挡报警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开换挡提示音设置",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开导航压低媒体音设置",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡提示音设置",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡提示音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭导航压低媒体音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡提示音设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "低速提示音切换到微风",
+        "wakeup_position": "主驾",
+        "api_name": "vsp_mode",
+        "parameters": {
+            "mode": {
+                "type": "str",
+                "value": "微风"
+            }
+        }
+    },
+    {
+        "query": "低速提示音切换到无尽",
+        "wakeup_position": "主驾",
+        "api_name": "vsp_mode",
+        "parameters": {
+            "mode": {
+                "type": "str",
+                "value": "无尽"
+            }
+        }
+    },
+    {
+        "query": "低速提示音切换到梦幻",
+        "wakeup_position": "主驾",
+        "api_name": "vsp_mode",
+        "parameters": {
+            "mode": {
+                "type": "str",
+                "value": "梦幻"
+            }
+        }
+    },
+    {
+        "query": "关闭开门降音设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "lower_vol_when_door_open_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开换挡提示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开换挡报警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开换挡提醒音量",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开换挡警示声音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开换挡告警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调低一点",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "little"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡提示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡报警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡提醒音量",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡警示声音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置来电提醒声音",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭换挡告警音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置来电提示音",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置换挡提示音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置来电提示音量",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置换挡提醒音",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关一下远端屏卡片设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭相册自动轮播设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开远端屏小地图设置",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关一下远端屏小地图设置",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开行人礼让灯语",
+        "wakeup_position": "主驾",
+        "api_name": "pedestrian_yield_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭行人礼让灯语",
+        "wakeup_position": "主驾",
+        "api_name": "pedestrian_yield_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关闭wlan",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开wlan",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭屏保",
+        "wakeup_position": "主驾",
+        "api_name": "screen_saver_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开屏保",
+        "wakeup_position": "主驾",
+        "api_name": "screen_saver_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "设置wlan",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开行人礼让灯语",
+        "wakeup_position": "主驾",
+        "api_name": "pedestrian_yield_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭行人礼让灯语",
+        "wakeup_position": "主驾",
+        "api_name": "pedestrian_yield_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开系统设置",
+        "wakeup_position": "主驾",
+        "api_name": "system_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开屏保",
+        "wakeup_position": "主驾",
+        "api_name": "screen_saver_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭屏保",
+        "wakeup_position": "主驾",
+        "api_name": "screen_saver_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开能量页面",
+        "wakeup_position": "主驾",
+        "api_name": "energy_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "报警音设置到中",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "medium"
+            }
+        }
+    },
+    {
+        "query": "警报音量设置到中",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "medium"
+            }
+        }
+    },
+    {
+        "query": "设置告警音量",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开报警音设置",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关掉报警音设置",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开开门降音",
+        "wakeup_position": "主驾",
+        "api_name": "lower_vol_when_door_open_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭开门降音",
+        "wakeup_position": "主驾",
+        "api_name": "lower_vol_when_door_open_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置告警音量",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "来电提示音设置为低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "enumeration",
+                "value": "low"
+            }
+        }
+    },
+    {
+        "query": "来电提示音切换到最低",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "min"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调整至最大",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "extremeValue",
+                "value": "max"
+            }
+        }
+    },
+    {
+        "query": "来电提示音设置到3档",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "number",
+                "value": "3"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "level"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调到20%",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调高三分之一",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "打开来电提示音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开报警音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开导航压低媒体音设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "lower_media_volume_when_navigating",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开开门降音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "lower_vol_when_door_open_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开换挡提示音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开换挡提示音设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "gear_shift_reminder_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开相册自动轮播开关",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关掉相册自动轮播开关",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开相册自动轮播设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "album_auto_carousel_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开远端屏小地图开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_map_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开远端屏卡片开关",
+        "wakeup_position": "主驾",
+        "api_name": "remote_screen_card_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭头枕模式",
+        "wakeup_position": "主驾",
+        "api_name": "headrest_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "副驾屏亮度调到20%",
+        "wakeup_position": "主驾",
+        "api_name": "passenger_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "20"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "扶手屏亮度调到30%",
+        "wakeup_position": "主驾",
+        "api_name": "armrest_screen_luminance",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "value": {
+                "type": "number",
+                "value": "30"
+            },
+            "unit": {
+                "type": "str",
+                "value": "percent"
+            }
+        }
+    },
+    {
+        "query": "开一下来电提示音设置",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭来电提示音设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调整为10",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "number",
+                "value": "10"
+            }
+        }
+    },
+    {
+        "query": "来电提示音调高1/3",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "来电提示音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "关闭来电提示音量设置界面",
+        "wakeup_position": "主驾",
+        "api_name": "ring_tone_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开智慧助手设置",
+        "wakeup_position": "主驾",
+        "api_name": "voice_assistant_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开WLAN",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "设置WLAN",
+        "wakeup_position": "主驾",
+        "api_name": "wlan_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "查看wlan状态",
+        "wakeup_position": "主驾",
+        "api_name": "check_wlan",
+        "parameters": {}
+    },
+    {
+        "query": "查看WLAN状态",
+        "wakeup_position": "主驾",
+        "api_name": "check_wlan",
+        "parameters": {}
+    },
+    {
+        "query": "警告音设置至三分之一",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警告音设置至1/3",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警示音量切换至三分之一",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警示音量切换至1/3",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "set"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警告音调低三分之一",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警告音调低1/3",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "decrease"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警告音调高3档",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "3"
+            },
+            "unit": {
+                "type": "Unit",
+                "value": "level"
+            }
+        }
+    },
+    {
+        "query": "警告音调高三分之一",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "警告音调高1/3",
+        "wakeup_position": "主驾",
+        "api_name": "volume_control",
+        "parameters": {
+            "function": {
+                "type": "str",
+                "value": "increase"
+            },
+            "volumeType": {
+                "type": "str",
+                "value": "报警音"
+            },
+            "value": {
+                "type": "number",
+                "value": "1/3"
+            }
+        }
+    },
+    {
+        "query": "设置报警音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置警告音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置警报音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置警示声",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置示警声音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "打开报警音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关掉报警音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "关掉报警音设置页面",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "设置告警音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "开一下警告声设置",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "打开警报声音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关上警报声音",
+        "wakeup_position": "主驾",
+        "api_name": "alarm_sound_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "设置充电电流",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭充电电流",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开充电电流",
+        "wakeup_position": "主驾",
+        "api_name": "electricity_limit_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "设置能耗曲线",
+        "wakeup_position": "主驾",
+        "api_name": "energy_curve_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "openSettingPage"
+            }
+        }
+    },
+    {
+        "query": "关闭能耗曲线",
+        "wakeup_position": "主驾",
+        "api_name": "energy_curve_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "打开能耗曲线",
+        "wakeup_position": "主驾",
+        "api_name": "energy_curve_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "关闭能耗曲线页面",
+        "wakeup_position": "主驾",
+        "api_name": "energy_curve_page",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "closeSettingPage"
+            }
+        }
+    },
+    {
+        "query": "切换成广东话",
+        "wakeup_position": "主驾",
+        "api_name": "dialect_recognition",
+        "parameters": {
+            "dialect": {
+                "type": "str",
+                "value": "广东话"
+            }
+        }
+    },
+    {
+        "query": "将发音人切换为广东话",
+        "wakeup_position": "主驾",
+        "api_name": "dialect_recognition",
+        "parameters": {
+            "dialect": {
+                "type": "str",
+                "value": "广东话"
+            }
+        }
+    },
+    {
+        "query": "将HUD显示模式切换为全部",
+        "wakeup_position": "主驾",
+        "api_name": "hud_display_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "全部"
+            }
+        }
+    },
+    {
+        "query": "关闭全部HUD显示模式",
+        "wakeup_position": "主驾",
+        "api_name": "hud_display_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            },
+            "mode": {
+                "type": "str",
+                "value": "全部"
+            }
+        }
+    },
+    {
+        "query": "开一下天幕一键透光",
+        "wakeup_position": "主驾",
+        "api_name": "skycurtain_one_touch_bright_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "将光感天幕一键透亮关上",
+        "wakeup_position": "主驾",
+        "api_name": "skycurtain_one_touch_bright_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下天幕一键全黑",
+        "wakeup_position": "主驾",
+        "api_name": "skycurtain_one_touch_dark_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "将光感天幕一键全黑关上",
+        "wakeup_position": "主驾",
+        "api_name": "skycurtain_one_touch_dark_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下哎迎宾踏板临时开启模式",
+        "wakeup_position": "主驾",
+        "api_name": "door_sill_step_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            },
+            "mode": {
+                "type": "str",
+                "value": "临时开启"
+            }
+        }
+    },
+    {
+        "query": "给我把迎宾踏板临时开启模式关闭",
+        "wakeup_position": "主驾",
+        "api_name": "door_sill_step_mode",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            },
+            "mode": {
+                "type": "str",
+                "value": "临时开启"
+            }
+        }
+    },
+    {
+        "query": "开一下极致转向",
+        "wakeup_position": "主驾",
+        "api_name": "extreme_steering_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "给极致转向关",
+        "wakeup_position": "主驾",
+        "api_name": "extreme_steering_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开一下跑山模式",
+        "wakeup_position": "主驾",
+        "api_name": "mountain_mode_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "给跑山模式关掉",
+        "wakeup_position": "主驾",
+        "api_name": "mountain_mode_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开下云享大床模式",
+        "wakeup_position": "主驾",
+        "api_name": "cloud_comfort_bed_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "帮我把云享大床模式关了",
+        "wakeup_position": "主驾",
+        "api_name": "cloud_comfort_bed_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    },
+    {
+        "query": "开启车内外对话模式",
+        "wakeup_position": "主驾",
+        "api_name": "in_out_dialogue_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "open"
+            }
+        }
+    },
+    {
+        "query": "车内外对话模式不要了",
+        "wakeup_position": "主驾",
+        "api_name": "in_out_dialogue_switch",
+        "parameters": {
+            "switch": {
+                "type": "str",
+                "value": "close"
+            }
+        }
+    }
+]
